@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# Plataforma de Recrutamento de profissionais de TI
 
-`CURSO`
+`Analise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Móvel`
 
-`SEMESTRE`
+`Eixo 3`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Projeto para criação de uma plataforma móvel especializada no recrutamento de profissionais de TI. A plataforma prevê o cadastro dos profissionais, detalhando seus conhecimentos, habilidades, experiências, área de atuação, além de ferramentas de busca para auxiliar os recrutadores.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Adilson Antônio Ferreira Junior
+* Jéssica Gonçalves Dos Santos
+* José Flávio Miranda 
+* Pedro Henrique Pinto de Lacerda
+* Pedro Von Der Heide Souza
+* Rodrigo Lobenwein Resende
+* Vera Lúcia Gonçalves Almeida
 
-## Orientador
+# Orientador
 
-* Nome completo do professor 1
+* Will Ricardo dos Santos Machado
 
 ## Instruções de utilização
 
