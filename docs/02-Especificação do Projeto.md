@@ -2,7 +2,7 @@
 
 ## Personas
 
- 
+
 Ana Maria tem 25 anos, é uma desenvolvedora Jr front-end em ReactJs buscando oportunidade como desenvolvedora back-end em Java. Ana já possui um portfólio inicial em Java e gostaria de divulgá-lo com intenção de receber uma oferta de emprego para atuar na área. Além disso, ela deseja se conectar com outras pessoas desenvolvedoras em Java para compartilhar e adquirir conhecimento sobre a linguagem.
 
 
@@ -39,10 +39,10 @@ Marina Rodrigues tem 35 anos, é uma desenvolvedora Jr front-end em React Js bus
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                              |PARA ... `MOTIVO/VALOR`                                               |
-|--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|                   
+|--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
 |Fernanda Silva      | Publicar meus projetos                                          | ingressar rapidamente no mercado de trabalho sem área específica  |
-|Andre Maia          | Publicar meus projetos                                          | conseguir um estágio na minha área de atuação                           |
-|Andre Maia          | Publicar meus projetos                                          | compartilhar rapidamente com qualquer pessoa                            |
+|André Maia          | Publicar meus projetos que comprovem meu experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
+|André Maia          | Trocar conhecimentos com profissionais SAP ABAP | compartilhar conhecimentos rapidamente com qualquer pessoa |
 |Maria José          | Organizar meus projetos por linguagens                          | mostrar minhas habilidades para recrutadores                            |
 |João da Silva       | Encontrar profissionais com conhecimentos específicos           | reduzir o tempo necessário de treinamento e capacitação                            |
 |João da Silva       | Ter uma plataforma onde consiga pesquisar profissionais utilizando filtros, como a experiência com uma linguagem | encontrar o profissional ideal para cada posição da sua equipe|
