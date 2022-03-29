@@ -41,7 +41,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                              |PARA ... `MOTIVO/VALOR`                                               |
 |--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
 |Fernanda Silva      | Publicar meus projetos                                          | ingressar rapidamente no mercado de trabalho sem área específica  |
-|André Maia          | Publicar meus projetos que comprovem meu experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
+|André Maia          | Publicar meus projetos que comprovem minha experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
 |André Maia          | Trocar conhecimentos com profissionais SAP ABAP | compartilhar conhecimentos rapidamente com qualquer pessoa |
 |Maria José          | Organizar meus projetos por linguagens                          | mostrar minhas habilidades para recrutadores                            |
 |João da Silva       | Encontrar profissionais com conhecimentos específicos           | reduzir o tempo necessário de treinamento e capacitação                            |
@@ -51,20 +51,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |João da Silva       | Pesquisar profissionais que já trabalharam no setor financeiro | ter na equipe uma pessoa mais familiarizada com as regras de negócio do projeto|
 |João da Silva       | Ter a possibilidade de entrar em contato com os profissionais | agendar uma entrevista|
 |Ana Maria           | Organizar seus projetos em ordem cronológica                    | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
-|Antonio Bandeira    | Visualizar projetos                                             | Recrutar a Maria José e outros desenvolvedores.                         |
 | Ana Maria            | Publicar meus projetos em Java                                   | ingressar de maneira rápida no mercado de trabalho                      |
 | Ana Maria            | Trocar experiências com outros desenvolvedores em Java           | adquirir e compartilhar conhecimentos sobre a linguagem                 |
-| Andre Maia           | Publicar meus projetos                                           | conseguir um estágio na minha área de atuação                           |
-| Andre Maia           | Publicar meus projetos                                           | compartilhar rapidamente com qualquer pessoa                            |
-| Maria José           | Organizar meus projetos por linguagens                           | mostrar minhas habilidades para recrutadores                            |
-| João da Silva        | Publicar meus projetos                                           | apresentar em um processo seletivo de trainee                           |
-| João da Silva        | Ter um site personalizado de portfolio de projetos                | atualiza-lo rapidamente                                                |
+|Antonio Bandeira    | Visualizar projetos                                             | Recrutar a Maria José e outros desenvolvedores.                         |
 | Fernanda Silva       | Organizar seus projetos em ordem cronológica                     | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
 | Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                         | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
 | Administrador        | Alterar permissões                                               | Permitir que possam administrar contas                                  |
-| Antonio Bandeira     | Visualizar projetos                                              | Recrutar a Maria José e outros desenvolvedores.                         |
-| João da Silva        | Fornecer em uma única aplicação acesso ao meu perfil do LinkedIn | Facilitar a vida do recrutador                                          |
-| João da Silva        | Fornecer em uma única aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                          |
 | Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
 
 
