@@ -25,9 +25,14 @@ Fernanda Silva tem 23 anos e é formada em Ciências da Computação. Ela busca 
 ![fernanda silva](https://user-images.githubusercontent.com/81194817/135849173-7f3299d5-002d-416d-8c99-4dd9130f0b28.png) 
 
 
-Antonio Bandeira tem 54 anos, é Gerente do setor de Tecnologia da Informação de uma grande multinacional, está a procura de bons desenvolvedores. Está entrevistando a Maria Jsé e deseja acessar o site para visualizar seus projetos, acessar seu Linkedin e seu perfil do GitHub e de outros usuarios. 
+Antonio Bandeira tem 54 anos, é Gerente do setor de Tecnologia da Informação de uma grande multinacional, está a procura de bons desenvolvedores. Está entrevistando a Maria José e deseja acessar o site para visualizar seus projetos, acessar seu Linkedin e seu perfil do GitHub e de outros usuarios. 
 
 ![download (2)](https://user-images.githubusercontent.com/81194817/138904809-91074819-bf30-4262-a572-fc5e48bb85c7.jpg)
+
+Marina Rodrigues tem 35 anos, é uma desenvolvedora Jr front-end em React Js buscando oportunidade como desenvolvedora back-end C#. Marina possui um portfólio inicial em React e gostaria de divulgá-lo com intenção de receber uma oferta de emprego para atuar na área. Inclusive pensando em carreira internacional. Além disso, ela deseja se conectar com outros desenvolvedores na linguagem C# para compartilhar e adquirir conhecimento sobre a linguagem. 
+
+![Marina Rodrigues](img/marina_rodrigues.PNG)
+
 
 ## Histórias de Usuários
 
@@ -53,13 +58,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Andre Maia           | Publicar meus projetos                                           | compartilhar rapidamente com qualquer pessoa                            |
 | Maria José           | Organizar meus projetos por linguagens                           | mostrar minhas habilidades para recrutadores                            |
 | João da Silva        | Publicar meus projetos                                           | apresentar em um processo seletivo de trainee                           |
-| João da Silva        | Ter um site personalizado de portfolio de projetos                | atualiza-lo rapidamente                                                 |
+| João da Silva        | Ter um site personalizado de portfolio de projetos                | atualiza-lo rapidamente                                                |
 | Fernanda Silva       | Organizar seus projetos em ordem cronológica                     | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
 | Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                         | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
 | Administrador        | Alterar permissões                                               | Permitir que possam administrar contas                                  |
 | Antonio Bandeira     | Visualizar projetos                                              | Recrutar a Maria José e outros desenvolvedores.                         |
 | João da Silva        | Fornecer em uma única aplicação acesso ao meu perfil do LinkedIn | Facilitar a vida do recrutador                                          |
 | João da Silva        | Fornecer em uma única aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                          |
+| Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
 
 
 
