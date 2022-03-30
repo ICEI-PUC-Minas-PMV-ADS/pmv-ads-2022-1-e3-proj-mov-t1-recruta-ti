@@ -41,8 +41,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                              |PARA ... `MOTIVO/VALOR`                                               |
 |--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
 |Fernanda Silva      | Publicar meus projetos                                          | ingressar rapidamente no mercado de trabalho sem área específica  |
-|Fernanda Silva       | Organizar seus projetos em ordem cronológica                     | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
-|Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                         | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
+|Fernanda Silva       | Organizar seus projetos em ordem cronológica                   | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
+|Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                       | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
+|Fernanda Silva       | Publicar meus projetos                                         | para facilitar o acesso do Recrutar aos trabalhos realizados |
 |André Maia          | Publicar meus projetos que comprovem minha experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
 |André Maia          | Trocar conhecimentos com profissionais SAP ABAP | compartilhar conhecimentos rapidamente com qualquer pessoa |
 |Maria José          | Organizar meus projetos por linguagens                          | mostrar minhas habilidades para recrutadores                            |
