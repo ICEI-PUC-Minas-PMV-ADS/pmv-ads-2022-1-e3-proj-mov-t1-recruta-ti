@@ -3,7 +3,7 @@
 ## Personas
 
 
-Ana Maria tem 25 anos, é uma desenvolvedora Jr front-end em ReactJs buscando oportunidade como desenvolvedora back-end em Java. Ana já possui um portfólio inicial em Java e gostaria de divulgá-lo com intenção de receber uma oferta de emprego para atuar na área. Além disso, ela deseja se conectar com outras pessoas desenvolvedoras em Java para compartilhar e adquirir conhecimento sobre a linguagem.
+Fernanda Silva tem 23 anos e é formada em Ciências da Computação. Ela busca um site personalizado onde possa publicar seus projetos feitos em treinamentos na universidade e os trabalhos realizados nas empresas onde trabalhou, com links de acesso ao GitHub e ao Linkedin, para que possa apresentar aos recrutadores, facilitando seu ingresso no mercado de trabalho, mesmo sem uma área específica.
 
 
 ![ana maria](https://user-images.githubusercontent.com/81194817/135849893-7251ac9a-947a-41a3-abce-4a96ad8e7e0d.png) 
@@ -51,10 +51,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |João da Silva       | Pesquisar profissionais que já trabalharam no setor financeiro | ter na equipe uma pessoa mais familiarizada com as regras de negócio do projeto|
 |João da Silva       | Ter a possibilidade de entrar em contato com os profissionais | agendar uma entrevista|
 |Ana Maria           | Organizar seus projetos em ordem cronológica                    | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
-| Ana Maria            | Publicar meus projetos em Java                                   | ingressar de maneira rápida no mercado de trabalho                      |
-| Ana Maria            | Trocar experiências com outros desenvolvedores em Java           | adquirir e compartilhar conhecimentos sobre a linguagem                 |
-|Antonio Bandeira    | Visualizar projetos                                             | Recrutar a Maria José e outros desenvolvedores.                         |
-| Fernanda Silva       | Organizar seus projetos em ordem cronológica                     | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
+| Ana Maria          | Publicar meus projetos desenvolvidos na faculdade e em empresas  | ingressar de maneira rápida em qualquer área no mercado de trabalho    |
+| Ana Maria          | Disponibilizar links para o GitHub e o Linkedin                  | facilitar acesso dos recrutadores aos trabalhos desenvolvidos          |
+|Antonio Bandeira     | Visualizar projetos                                             | recrutar a Maria José e outros desenvolvedores.                         |
+| Fernanda Silva      | Organizar seus projetos em ordem cronológica                     | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
 | Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                         | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
 | Administrador        | Alterar permissões                                               | Permitir que possam administrar contas                                  |
 | Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
