@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1iy0cn7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:collaboration id="Collaboration_0ydyp10">
+    <bpmn:participant id="Participant_0kc55w7" name="Recrutamento de Profissional de TI (ativo)" processRef="Process_0x90toy" />
+    <bpmn:participant id="Participant_1mr5ovv" name="Profissional de TI" processRef="Process_08dpp5u" />
+    <bpmn:messageFlow id="Flow_096da60" name="Abordagem ao profissional" sourceRef="Activity_1m2zila" targetRef="Participant_1mr5ovv" />
+    <bpmn:messageFlow id="Flow_0l2aewv" name="Profissional aceita conversar sobre a oportunidade" sourceRef="Participant_1mr5ovv" targetRef="Activity_189vwhi" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0x90toy" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_0m11l7w">
+      <bpmn:lane id="Lane_1y8ruu5" name="Recrutador">
+        <bpmn:flowNodeRef>Event_01lpx4x</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0pbmibq</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_1m2zila</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_189vwhi</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_0fg2sap</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:intermediateThrowEvent id="Event_01lpx4x" name="Busca por profissionais de TI no mercado">
+      <bpmn:outgoing>Flow_0ukwvg5</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:userTask id="Activity_0pbmibq" name="Realiza busca no LinkedIn">
+      <bpmn:incoming>Flow_0ukwvg5</bpmn:incoming>
+    </bpmn:userTask>
+    <bpmn:task id="Activity_1m2zila" name="Analisa o perfil do profissional encontrado" />
+    <bpmn:task id="Activity_189vwhi" name="Realiza entrevista">
+      <bpmn:outgoing>Flow_1df7cw9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0ukwvg5" sourceRef="Event_01lpx4x" targetRef="Activity_0pbmibq" />
+    <bpmn:intermediateThrowEvent id="Event_0fg2sap" name="Continua no fluxo normal do processo seletivo">
+      <bpmn:incoming>Flow_1df7cw9</bpmn:incoming>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:sequenceFlow id="Flow_1df7cw9" sourceRef="Activity_189vwhi" targetRef="Event_0fg2sap" />
+  </bpmn:process>
+  <bpmn:process id="Process_08dpp5u" isExecutable="false" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0ydyp10">
+      <bpmndi:BPMNShape id="Participant_0kc55w7_di" bpmnElement="Participant_0kc55w7" isHorizontal="true">
+        <dc:Bounds x="160" y="260" width="780" height="370" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1y8ruu5_di" bpmnElement="Lane_1y8ruu5" isHorizontal="true">
+        <dc:Bounds x="190" y="260" width="750" height="370" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0ukwvg5_di" bpmnElement="Flow_0ukwvg5">
+        <di:waypoint x="288" y="430" />
+        <di:waypoint x="380" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1df7cw9_di" bpmnElement="Flow_1df7cw9">
+        <di:waypoint x="790" y="430" />
+        <di:waypoint x="842" y="430" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_01lpx4x_di" bpmnElement="Event_01lpx4x">
+        <dc:Bounds x="252" y="412" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="232" y="455" width="77" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ehkaw3_di" bpmnElement="Activity_0pbmibq">
+        <dc:Bounds x="380" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1m2zila_di" bpmnElement="Activity_1m2zila">
+        <dc:Bounds x="550" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_189vwhi_di" bpmnElement="Activity_189vwhi">
+        <dc:Bounds x="690" y="390" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0fg2sap_di" bpmnElement="Event_0fg2sap">
+        <dc:Bounds x="842" y="412" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="817" y="455" width="86" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_1mr5ovv_di" bpmnElement="Participant_1mr5ovv" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="780" height="130" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_096da60_di" bpmnElement="Flow_096da60">
+        <di:waypoint x="600" y="390" />
+        <di:waypoint x="600" y="210" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="604" y="226" width="72" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0l2aewv_di" bpmnElement="Flow_0l2aewv">
+        <di:waypoint x="740" y="210" />
+        <di:waypoint x="740" y="390" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="748" y="283" width="83" height="53" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

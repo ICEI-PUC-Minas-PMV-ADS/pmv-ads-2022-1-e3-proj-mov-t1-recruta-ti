@@ -60,29 +60,80 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
 
 
-
-
 ## Modelagem do Processo de Negócio 
 
-### Análise da Situação Atual
+### Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Passos
+1)	O Gestor de TI solicita a contratação para uma vaga, informando o perfil necessário
+2)	O recrutador realiza a divulga a vaga
+3)	O recrutador recebe currículos dos candidatos
+4)	O recrutador faz uma triagem nos currículos, descartando aqueles que não se alinham ao perfil
+5)	O recrutador faz uma segunda triagem nos currículos, selecionando 1 candidato para entrevistar
+6)	O recrutador entra em contato com o candidato agendando uma entrevista
+7)	O recrutador realiza a entrevista
+8)	Se o candidato está alinhado com o perfil solicitado, o recrutador agenda uma nova entrevista, a ser realizada pelo Gestor. Caso contrário, seleciona outro candidato (volta ao passo 5)
+9)	O Gestor realiza a entrevista
+10)	Se o candidato é aprovado, o Gestor o encaminha para a realização de um teste prático. Caso contrário, o Gestor solicita outro candidato ao Recrutador (volta ao passo 5).
+11)	O Candidato realiza o teste prático
+12)	Se o candidato é aprovado, o processo é finalizado e enviado ao RH para contratação. Caso contrário, o Gestor solicita outro candidato ao Recrutador (volta ao passo 5)
+13)	Se nenhum candidato é aprovado e não restam mais currículos, o recrutador inicia a busca por profissional já empregado.
+14)	O recrutador faz uma busca no LinkedIn considerando alguns parâmetros.
+15)	O recrutador escolhe um profissional para abordar, informando sobre a oportunidade aberta.
+16)	Se o profissional aceita participar do processo seletivo, continua no passo 7.
+17)	Se não aceita ou o candidato não é aprovado, volta ao passo 15.
+
+### Análise
+O processo é inteiramente manual. O recrutador deve analisar os currículos recebidos um a um para realizar a primeira triagem. O recrutador pode agendar entrevistas com vários candidatos, mas, se nenhum for aprovado, deve-se fazer nova triagem e novas entrevistas. Como não existe uma padronização de currículos no mercado, frequentemente as informações estão incompletas e o recrutador deve entrar em contato com o candidato a fim completá-las. Além disso, quando há a necessidade de um perfil muito específico, cresce a necessidade de entrevistas prévias com os candidatos.
+A situação atual do mercado de TI – com a demanda crescendo mais rapidamente que a formação de profissionais – impacta na quantidade de candidatos em um processo seletivo. Assim, é comum que vagas demorem meses para serem preenchidas. Quando há urgência na contratação, o recrutador precisa buscar por profissionais atuando em outras empresas, uma atividade que demanda mais tempo que o processo seletivo padrão.
+Por fim, não raro contratam quem está disponível ou quem aceita a oferta – e custeiam-se longas fases de capacitação e adaptação. Profissional e empresa acabam não ficando satisfeitos um com o outro – já que o profissional atuando fora da sua especialidade tende a produzir menos.
+
+
+#### Sob a ótica do candidato
+O estudante ou profissional em busca de colocação no mercado deve ficar atendo a diversas plataformas onde as oportunidades são divulgadas. Envia o currículo para a vaga de interesse e aguarda o recrutador entrar em contato. É comum que as vagas anunciadas contenham poucas informações, então o candidato envia seu currículo na esperança de ter mais informações durante a entrevista. Em alguns casos o candidato aceitará oportunidades por ter salários mais altos, mesmo que fora da sua área preferencial de atuação.
+
+## Possibilidades de melhoria
+Profissionais de TI de todos os níveis podem cadastrar seu perfil em uma plataforma. Como muitos campos seriam fechados (botões de rádio, listas), grande parte das informações ficaria padronizada. Como existem campos específicos, o profissional provê maiores informações sobre seus conhecimentos e habilidades.
+Profissionais de recrutamento com acesso à plataforma podem usar ferramentas de busca e filtro para encontrar candidatos ideais para sua necessidade.
+
+## Processo 1 - Recrutamento de Profissional de TI (passivo)
+
+![Modelo BPMN - Atual-Passivo](img/Processo_Negocio_BPMN_Atual_Passivo.png)
+
+O arquivo original (formato bpmn) pode ser visto em na pasta docs/files: [Processo_Negocio_BPMN_Atual_Passivo.bpmn](files/Processo_Negocio_BPMN_Atual_Passivo.bpmn)
+
+
+## Processo 2 - Recrutamento de Profissional de TI (ativo)
+
+![Modelo BPMN - Atual-Ativo](img/Processo_Negocio_BPMN_Atual_ativo.png)
+
+O arquivo original (formato bpmn) pode ser visto em na pasta docs/files: [Processo_Negocio_BPMN_Atual_ativo.bpmn](files/Processo_Negocio_BPMN_Atual_ativo.bpmn)
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+1.	O profissional de Ti cadastra seu perfil, informando dados pessoais, dados para contato e:
+    - Área de atuação: Front-end, back-end, Full Stack, Banco de Dados, UX, etc;
+    - Conhecimento em linguagens: seleção da linguagem e atribuindo uma nota ou conceito
+    - Experiências profissionais anteriores (relacionadas a TI ou não)
+    - Projetos: projetos de seu repositório Github que gostaria de destacar, com imagem, descrição e outras informações
+    - Escolaridade 
+    - Outros cursos
+    - Certificações
+    - Soft skills
+    - Outras habilidades
+    - Outras informações
+    - Disponibilidade para viagem, mudança de cidade/estado/país
+    - Modalidade de trabalho: remota, presencial, híbrida
+    - Se está aberto a novas oportunidades de carreira (se não o perfil não aparecerá nos resultados de busca dos recrutadores
+2.	O recrutador acessa a plataforma e especifica o perfil da vaga.
+3.	A plataforma retorna os perfis que atendem aos critérios
+4.	O recrutador envia mensagens aos candidatos agendando entrevista
+5.	O processo de seleção segue o fluxo atual
 
-### Processo 1 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
+### Possibilidades futuras:
+* Oferta de cursos de curta e média duração para os profissionais
+* Possibilidade da empresa enviar os testes para os candidatos realizarem através da plataforma, * tornando o processo mais célere
+* Possibilidade de criação de testes próprios da plataforma – evita a necessidade de a empresa realizar testes durante o processo seletivo
 
 ## Indicadores de Desempenho
 
@@ -155,12 +206,6 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
 ![Matriz de rastreabilidade](img/matriz_rastreabilidade.PNG)
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
-
 
 # Gerenciamento de Projeto
 
