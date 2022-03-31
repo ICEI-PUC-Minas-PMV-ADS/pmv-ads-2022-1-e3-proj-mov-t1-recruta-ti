@@ -41,7 +41,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                              |PARA ... `MOTIVO/VALOR`                                               |
 |--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
 |Fernanda Silva      | Publicar meus projetos                                          | ingressar rapidamente no mercado de trabalho sem área específica  |
-|Fernanda Silva       | Organizar seus projetos em ordem cronológica                   | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
+|Fernanda Silva       | Organizar meus projetos em ordem cronológica                   | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
 |Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                       | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
 |Fernanda Silva       | Publicar meus projetos                                         | para facilitar o acesso do Recrutar aos trabalhos realizados |
 |André Maia          | Publicar meus projetos que comprovem minha experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
@@ -58,7 +58,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Ana Maria            | Trocar experiências com outros desenvolvedores em Java           | adquirir e compartilhar conhecimentos sobre a linguagem                 |
 |Antonio Bandeira    | Visualizar projetos                                             | Recrutar a Maria José e outros desenvolvedores.                         |
 | Administrador        | Alterar permissões                                               | Permitir que possam administrar contas                                  |
-| Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
+| Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar o trabalho do recrutador                                         |
 
 
 ## Modelagem do Processo de Negócio 
