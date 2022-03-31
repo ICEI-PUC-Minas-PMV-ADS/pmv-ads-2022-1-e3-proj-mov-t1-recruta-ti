@@ -8,7 +8,7 @@ Fernanda Silva tem 23 anos e é formada em Ciências da Computação. Ela busca 
 
 ![ana maria](https://user-images.githubusercontent.com/81194817/135849893-7251ac9a-947a-41a3-abce-4a96ad8e7e0d.png) 
 
-André Maia tem 35 anos, portador de deficiência física, desenvolvedor pleno back-end em Python e está em busca de novos desafios em linguagem ABAP. André possui vários projetos que demonstram sua experiência profissional e conhecimento em lógica de programação. Desta maneira, ele gostaria de ter uma ferramenta que o conectasse a pessoas desenvolvedoras ABAP e a empresas que buscam e promovem treinamentos nesta linguagem afim de aperfeiçoar e criar profissionais capacitados. André também espera que esta ferramenta possa facilitar sua comunicação com as pessoas recrutadoras.
+André Maia tem 35 anos, é portador de deficiência física, desenvolvedor pleno back-end em Python e está em busca de novos desafios em linguagem ABAP. Ele possui vários projetos que demonstram sua experiência profissional e conhecimento em lógica de programação e gostaria de publicá-los em alguma plataforma. André gostaria de ter a oportunidade de participar de cursos de aperfeiçoamento em sua nova área. Ele pretende se disponibilizar para vagas de estágio de desenvolvedor ABAP. Espera também que esta ferramenta possibilite sua disponibilização frente às oportunidades do mercado de trabalho na área de TI. 
 
 ![andremaia](https://user-images.githubusercontent.com/81194817/135849211-33677944-1b7a-42ae-965f-0f4446e1f7d8.jpg)
 
@@ -153,29 +153,29 @@ Os requisitos funcionais são de extrema importância no desenvolvimento de apli
 
 |ID    | Descrição do Requisito                                                                                  | Prioridade |
 |------|---------------------------------------------------------------------------------------------------------|------------|
-|RF-001| A aplicação deve permitir o cadastro e login para os administradores                                    |    ALTA  | 
-|RF-002| A aplicação deve permitir um espaço para apresentação profissional do usuário                           |    ALTA   | 
-|RF-003| A aplicação deve conter um espaço para a exposição de projetos                                          |    MÉDIA   | 
-|RF-004| A aplicação deve conter um campo com formulário de contato                                              |    MÉDIA   |
-|RF-005| A aplicação deve conter um filtro de projetos por linguagem                                             |    MÉDIA   |
-|RF-006| A aplicação deve conter um espaço para incluir certificados de treinamentos                             |    MÉDIA   |
-|RF-007| A aplicação deve conter uma área para seleção do perfil do profissional desejado                        |    MÉDIA   |
-|RF-008| A aplicação deve conter um campo para acesso direto ao LinkedIn                                         |    MÉDIA   |
-|RF-009| A aplicação deve conter um campo para acesso ao GitHub                                                  |    MÉDIA   |
-|RF-010| A aplicação deve conter um espaço para cadastro e exposição do perfil dos usuários cadastrados          |    ALTA   |
+|RF-001| A aplicação deve permitir o cadastro e o login para o candidato                                         |    ALTA  | 
+|RF-002| A aplicação deve conter um espaço para o candidato cadastrar seu perfil, informando dados pessoais e dados para contato|    ALTA   | 
+|RF-003| A aplicação deve conter um espaço para apresentação profissional do usuário                                   |    ALTA    | 
+|RF-004| A aplicação deve conter um espaço para publicação dos links dos projetos do candidato no GitHub e no Linkedin |    MÉDIA   |
+|RF-005|                                                                                                               |       |
+|RF-006|                                                                                                               |       |
+|RF-007|                                                                                                               |       |
+|RF-008|                                                                                                               |       |
+|RF-009|                                                                                                               |       |
+|RF-010|                                                                                                               |       |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito                                                                                                      |Prioridade |
 |-------|-----------------------------------------------------------------------------------------------------------------------------|-----------|
-|RNF-001| A aplicação deve ser de fácil manutenção                                                                                    |   MÉDIA   | 
-|RNF-002| A aplicação deve conter os padrões de segurança da informação                                                               |   MÉDIA   | 
-|RNF-003| A aplicação deve emitir LOG de erros na tela de login                                                                       |   MÉDIA   | 
-|RNF-004| Todas as funcionalidades da aplicação devem ter um tempo de resposta de no máximo 5 segundos                                |   MÉDIA   | 
-|RNF-005| A aplicação deverá conter armazenamento de informações em Banco de Dados SQL Server                                         |   MÉDIA   | 
-|RNF-006| A aplicação deverá ser desenvolvida em HTML, CSS, JavaScript e C#                                                           |   MÉDIA   | 
-|RNF-007| A aplicação deverá seguir padrões de cores e fontes harmônicas                                                              |   MÉDIA   | 
-|RNF-008| A aplicação deverá respeitar a privacidade dos perfis, de forma que não apresente informações de perfis não selecionados    |   MÉDIA   | 
+|RNF-001| A aplicação deve permitir o uso da persistência de dados                                                                    |   MÉDIA   | 
+|RNF-002| A aplicação deve conter os padrões de segurança da informação                                                               |   ALTA    | 
+|RNF-003| A aplicação deve seguir os padrões de acessibilidade                                                                        |   ALTA    | 
+|RNF-004| Todas as funcionalidades da aplicação devem ter um tempo de resposta de, no máximo, 5 segundos                              |   MÉDIA   | 
+|RNF-005|                                                                                                                             |      | 
+|RNF-006|                                                                                                                             |      | 
+|RNF-007|                                                                                                                             |      | 
+|RNF-008|                                                                                                                             |      | 
 
 
 ## Restrições
