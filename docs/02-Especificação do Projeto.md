@@ -223,7 +223,9 @@ A matriz GUT funciona com uma pontuação para cada critério (de 1 a 5).
 A resposta se dá pela multiplicação das pontuações dos 3 fatores, resultando em um valor indicador. Quanto maior esse número, maior a prioridade da demanda.
 
 Pontuação = G x U x T
+Desta forma, calculou-se a prioridade dos requisitos, conforme abaixo:
 
+![Priorização Requisitos](img/requisitosPriorizados.png)
 
 # Gerenciamento de Projeto
 
