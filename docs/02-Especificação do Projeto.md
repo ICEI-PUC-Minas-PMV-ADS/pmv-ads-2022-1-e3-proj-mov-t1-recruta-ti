@@ -212,7 +212,7 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 A técnica utilizada para priorização de requisitos é a técnica Matriz GUT.
 
-
+![Matriz Gut] (img/matrizgut.png)
 fonte: RockContent
 
 
