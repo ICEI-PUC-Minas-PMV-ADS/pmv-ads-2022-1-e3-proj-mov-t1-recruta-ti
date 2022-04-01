@@ -157,10 +157,10 @@ Os requisitos funcionais são de extrema importância no desenvolvimento de apli
 |RF-002| A aplicação deve conter um espaço para o candidato cadastrar seu perfil, informando dados pessoais e dados para contato|    ALTA   | 
 |RF-003| A aplicação deve conter um espaço para apresentação profissional do usuário                                   |    ALTA    | 
 |RF-004| A aplicação deve conter um espaço para publicação dos links dos projetos do candidato no GitHub e no Linkedin |    MÉDIA   |
-|RF-005|                                                                                                               |       |
-|RF-006|                                                                                                               |       |
-|RF-007|                                                                                                               |       |
-|RF-008|                                                                                                               |       |
+|RF-005| A aplicação deve permitir o cadastro e login do recrutador                                                    |    ALTA   |
+|RF-006| A aplicação deve permitir recuperação de senha para perfil de candidato e recrutador                          |    ALTA   |
+|RF-007| A aplicação deve ter um canal de comunicação entre candidato e recrutador                                     |    ALTA  |
+|RF-008| A aplicação deve ter um canal de comunicação com a administradora do aplicativo                               |    MÉDIA  |
 |RF-009|                                                                                                               |       |
 |RF-010|                                                                                                               |       |
 
@@ -172,7 +172,7 @@ Os requisitos funcionais são de extrema importância no desenvolvimento de apli
 |RNF-002| A aplicação deve conter os padrões de segurança da informação                                                               |   ALTA    | 
 |RNF-003| A aplicação deve seguir os padrões de acessibilidade                                                                        |   ALTA    | 
 |RNF-004| Todas as funcionalidades da aplicação devem ter um tempo de resposta de, no máximo, 5 segundos                              |   MÉDIA   | 
-|RNF-005|                                                                                                                             |      | 
+|RNF-005| A aplicação deve seguir a Lei Geral de Proteção de Dados                                                                    |   ALTA   | 
 |RNF-006|                                                                                                                             |      | 
 |RNF-007|                                                                                                                             |      | 
 |RNF-008|                                                                                                                             |      | 
