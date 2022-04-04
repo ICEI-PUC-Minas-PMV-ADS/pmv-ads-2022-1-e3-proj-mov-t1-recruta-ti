@@ -6,7 +6,7 @@ A aplicação mobile está estrutura cliente/servidor na forma de camadas. Consi
 A funcionalidade do código do aplicativo não é necessariamente uniforme em todo o aplicativo. Certas seções do código do aplicativo são mais adequadas para lidar com a interface do usuário, enquanto outras seções são desenvolvidas para gerenciar a lógica de negócios ou se comunicar com o banco de dados ou sistemas back-end.
 
 
-![Arquitetura da Solução](img/02-mob-arch.png)
+![Arquitetura da Solução](img/arquitetura_mobile.png)
 
 ## Diagrama de Classes
 
