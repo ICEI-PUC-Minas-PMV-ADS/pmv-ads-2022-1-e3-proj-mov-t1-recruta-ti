@@ -230,6 +230,18 @@ A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabil
 
 Atualmente, não há nenhum teste de qualidade pois não há desenvolvimento.
 
+# Wireframes
+
+![homePage](img/homePage.png)
+
+Para conferir as wireframes completas com interação, clique no link abaixo: 
+
+https://www.figma.com/proto/bvtDqVkUDlRKCb9kj7AKud/Untitled?node-id=13%3A19&scaling=scale-down&page-id=0%3A1&starting-point-node-id=13%3A19
+
+# Sitemap
+
+![sitemap](img/sitemap.jpeg)
+
 # Gerenciamento de Projeto
 
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
