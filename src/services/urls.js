@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://bright-impala-81.loca.lt';
