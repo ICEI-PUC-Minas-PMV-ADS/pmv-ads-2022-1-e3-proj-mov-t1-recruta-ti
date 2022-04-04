@@ -240,7 +240,7 @@ https://www.figma.com/proto/bvtDqVkUDlRKCb9kj7AKud/Untitled?node-id=13%3A19&scal
 
 # Sitemap
 
-![sitemap](img/sitemap.jpeg)
+![sitemap](img/sitemap.jfif)
 
 # Gerenciamento de Projeto
 
