@@ -2,7 +2,9 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+A aplicação mobile está estrutura cliente/servidor na forma de camadas. Considerando as definições estruturais da documentação pela qual está determinado todo o desenvolvimento da aplicação em questão.
+A funcionalidade do código do aplicativo não é necessariamente uniforme em todo o aplicativo. Certas seções do código do aplicativo são mais adequadas para lidar com a interface do usuário, enquanto outras seções são desenvolvidas para gerenciar a lógica de negócios ou se comunicar com o banco de dados ou sistemas back-end.
+
 
 ![Arquitetura da Solução](img/02-mob-arch.png)
 
