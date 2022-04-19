@@ -142,6 +142,15 @@ Os indicadores de desempenho (KPI) são métricas de avaliação do fluxo de tra
 Para que esses indicadores de desempenho possam contribuir significativamente no controle da empresa, é preciso ter um entendimento do planejamento estratégico e ter objetivos claros na hora de definir as metas. O resultado, então, servirá como referência para o processo de tomada de decisão e para a criação de estratégias de melhorias.
 Devemos ter sempre em mente que a métrica de desempenho deve apoiar a gestão, e não atrapalhá-la.
 
+1: Quantidade de cadastros de profissionais de TI
+
+2: Quantidade cadastros de recrutadores
+
+3: Quantidade de mensagens enviadas;
+
+4: Quantidade de contratações concretizadas por semana.
+
+
 ## Requisitos
 
 ### Requisitos Funcionais
