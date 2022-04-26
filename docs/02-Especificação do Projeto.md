@@ -146,9 +146,11 @@ Devemos ter sempre em mente que a métrica de desempenho deve apoiar a gestão, 
 
 2: Quantidade cadastros de recrutadores
 
-3: Quantidade de mensagens enviadas;
+3: Quantidade de mensagens enviadas
 
-4: Quantidade de contratações concretizadas por semana.
+4: Quantidade de contratações concretizadas por semana
+
+5: Percentual médio de preenchimento do perfil
 
 
 ## Requisitos
@@ -199,13 +201,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ![Diagrama de Caso de Uso](img/Diagrama%20de%20Casos%20de%20Uso.jpeg)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
-
 # Matriz de Rastreabilidade
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
@@ -238,18 +233,6 @@ Desta forma, calculou-se a prioridade dos requisitos, conforme abaixo:
 A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabilidade, segurança e robustez da aplicação. Com base nas normas NBR 13596 ISO/IEC 9126-1, 2001
 
 Atualmente, não há nenhum teste de qualidade pois não há desenvolvimento.
-
-# Wireframes
-
-![homePage](img/homePage.png)
-
-Para conferir as wireframes completas com interação, clique no link abaixo: 
-
-https://www.figma.com/proto/bvtDqVkUDlRKCb9kj7AKud/Untitled?node-id=13%3A19&scaling=scale-down&page-id=0%3A1&starting-point-node-id=13%3A19
-
-# Sitemap
-
-![sitemap](img/sitemap.jfif)
 
 # Gerenciamento de Projeto
 
