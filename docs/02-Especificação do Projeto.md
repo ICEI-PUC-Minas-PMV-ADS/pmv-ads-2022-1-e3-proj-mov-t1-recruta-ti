@@ -138,19 +138,20 @@ O arquivo original (formato bpmn) pode ser visto em na pasta docs/files: [Proces
 
 ## Indicadores de Desempenho
 
-Os indicadores de desempenho (KPI) são métricas de avaliação do fluxo de trabalho que mostram os níveis de capacidade, qualidade, produtividade das operação e trabalhadores em relação aos objetivos e metas traçados no planejamento estratégico.
+Os indicadores de desempenho (KPI) são métricas de avaliação do fluxo de trabalho que mostram os níveis de capacidade, qualidade, produtividade das operação e trabalhadores em relação aos objetivos e metas traçados no planejamento estratégico.  
 Para que esses indicadores de desempenho possam contribuir significativamente no controle da empresa, é preciso ter um entendimento do planejamento estratégico e ter objetivos claros na hora de definir as metas. O resultado, então, servirá como referência para o processo de tomada de decisão e para a criação de estratégias de melhorias.
-Devemos ter sempre em mente que a métrica de desempenho deve apoiar a gestão, e não atrapalhá-la.
+Devemos ter sempre em mente que a métrica de desempenho deve apoiar a gestão, e não atrapalhá-la.  
+Para que possamos medir o desempenho do projeto, usaremos os seguintes indicadores:
 
-1: Quantidade de cadastros de profissionais de TI
+* Quantidade de cadastros de profissionais de TI
 
-2: Quantidade cadastros de recrutadores
+* Quantidade cadastros de recrutadores
 
-3: Quantidade de mensagens enviadas
+* Quantidade de mensagens enviadas
 
-4: Quantidade de contratações concretizadas por semana
+* Quantidade de contratações concretizadas por semana
 
-5: Percentual médio de preenchimento do perfil
+* Percentual médio de preenchimento do perfil
 
 
 ## Requisitos
