@@ -8,7 +8,7 @@ Fernanda Silva tem 23 anos e é formada em Ciências da Computação. Ela busca 
 
 ![ana maria](https://user-images.githubusercontent.com/81194817/135849893-7251ac9a-947a-41a3-abce-4a96ad8e7e0d.png) 
 
-André Maia tem 35 anos, portador de deficiência física, desenvolvedor pleno back-end em Python e está em busca de novos desafios em linguagem ABAP. André possui vários projetos que demonstram sua experiência profissional e conhecimento em lógica de programação. Desta maneira, ele gostaria de ter uma ferramenta que o conectasse a pessoas desenvolvedoras ABAP e a empresas que buscam e promovem treinamentos nesta linguagem afim de aperfeiçoar e criar profissionais capacitados. André também espera que esta ferramenta possa facilitar sua comunicação com as pessoas recrutadoras.
+André Maia tem 35 anos, é portador de deficiência física, desenvolvedor pleno back-end em Python e está em busca de novos desafios em linguagem ABAP. Ele possui vários projetos que demonstram sua experiência profissional e conhecimento em lógica de programação e gostaria de publicá-los em alguma plataforma. André gostaria de ter a oportunidade de participar de cursos de aperfeiçoamento em sua nova área. Ele pretende se disponibilizar para vagas de estágio de desenvolvedor ABAP. Espera também que esta ferramenta possibilite sua disponibilização frente às oportunidades do mercado de trabalho na área de TI. 
 
 ![andremaia](https://user-images.githubusercontent.com/81194817/135849211-33677944-1b7a-42ae-965f-0f4446e1f7d8.jpg)
 
@@ -41,7 +41,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`                              |PARA ... `MOTIVO/VALOR`                                               |
 |--------------------|-----------------------------------------------------------------|----------------------------------------------------------------------|
 |Fernanda Silva      | Publicar meus projetos                                          | ingressar rapidamente no mercado de trabalho sem área específica  |
-|Fernanda Silva       | Organizar seus projetos em ordem cronológica                   | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
+|Fernanda Silva       | Organizar meus projetos em ordem cronológica                   | para mostrar minha evolução e facilitar o entendimento dos recrutadores |
 |Fernanda Silva       | Oferecer acesso ao Git Hub e ao LinkedIn                       | para mostrar os projetos realizados na universidade e nas empresas que trabalhei |
 |Fernanda Silva       | Publicar meus projetos                                         | para facilitar o acesso do Recrutar aos trabalhos realizados |
 |André Maia          | Publicar meus projetos que comprovem minha experiência e conhecimentos em lógica de programação | conseguir um contato com empresas que contratam e promovam treinamentos em ABAP para pessoas experientes em outras linguagens |
@@ -58,7 +58,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Ana Maria            | Trocar experiências com outros desenvolvedores em Java           | adquirir e compartilhar conhecimentos sobre a linguagem                 |
 |Antonio Bandeira    | Visualizar projetos                                             | Recrutar a Maria José e outros desenvolvedores.                         |
 | Administrador        | Alterar permissões                                               | Permitir que possam administrar contas                                  |
-| Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar a vida do recrutador                                         |
+| Marina Rodrigues      | Fornecer em uma unica aplicação acesso ao meu perfil do GitHub   | Facilitar o trabalho do recrutador                                         |
 
 
 ## Modelagem do Processo de Negócio 
@@ -138,12 +138,21 @@ O arquivo original (formato bpmn) pode ser visto em na pasta docs/files: [Proces
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Os indicadores de desempenho (KPI) são métricas de avaliação do fluxo de trabalho que mostram os níveis de capacidade, qualidade, produtividade das operação e trabalhadores em relação aos objetivos e metas traçados no planejamento estratégico.  
+Para que esses indicadores de desempenho possam contribuir significativamente no controle da empresa, é preciso ter um entendimento do planejamento estratégico e ter objetivos claros na hora de definir as metas. O resultado, então, servirá como referência para o processo de tomada de decisão e para a criação de estratégias de melhorias.
+Devemos ter sempre em mente que a métrica de desempenho deve apoiar a gestão, e não atrapalhá-la.  
+Para que possamos medir o desempenho do projeto, usaremos os seguintes indicadores:
 
-Usar o seguinte modelo: 
+* Quantidade de cadastros de profissionais de TI
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+* Quantidade cadastros de recrutadores
+
+* Quantidade de mensagens enviadas
+
+* Quantidade de contratações concretizadas por semana
+
+* Percentual médio de preenchimento do perfil
+
 
 ## Requisitos
 
@@ -153,29 +162,29 @@ Os requisitos funcionais são de extrema importância no desenvolvimento de apli
 
 |ID    | Descrição do Requisito                                                                                  | Prioridade |
 |------|---------------------------------------------------------------------------------------------------------|------------|
-|RF-001| A aplicação deve permitir o cadastro e login para os administradores                                    |    ALTA  | 
-|RF-002| A aplicação deve permitir um espaço para apresentação profissional do usuário                           |    ALTA   | 
-|RF-003| A aplicação deve conter um espaço para a exposição de projetos                                          |    MÉDIA   | 
-|RF-004| A aplicação deve conter um campo com formulário de contato                                              |    MÉDIA   |
-|RF-005| A aplicação deve conter um filtro de projetos por linguagem                                             |    MÉDIA   |
-|RF-006| A aplicação deve conter um espaço para incluir certificados de treinamentos                             |    MÉDIA   |
-|RF-007| A aplicação deve conter uma área para seleção do perfil do profissional desejado                        |    MÉDIA   |
-|RF-008| A aplicação deve conter um campo para acesso direto ao LinkedIn                                         |    MÉDIA   |
-|RF-009| A aplicação deve conter um campo para acesso ao GitHub                                                  |    MÉDIA   |
-|RF-010| A aplicação deve conter um espaço para cadastro e exposição do perfil dos usuários cadastrados          |    ALTA   |
+|RF-001| A aplicação deve permitir o cadastro e o login para o candidato                                         |    ALTA  | 
+|RF-002| A aplicação deve conter um espaço para o candidato cadastrar seu perfil, informando dados pessoais e dados para contato|    ALTA   | 
+|RF-003| A aplicação deve conter um espaço para apresentação profissional do usuário                                   |    ALTA    | 
+|RF-004| A aplicação deve conter um espaço para publicação dos links dos projetos do candidato no GitHub e no Linkedin |    MÉDIA   |
+|RF-005| A aplicação deve permitir o cadastro e login do recrutador                                                    |    ALTA   |
+|RF-006| A aplicação deve permitir recuperação de senha para perfil de candidato e recrutador                          |    ALTA   |
+|RF-007| A aplicação deve ter um canal de comunicação entre candidato e recrutador                                     |    ALTA  |
+|RF-008| A aplicação deve ter um canal de comunicação com a administradora do aplicativo                               |    MÉDIA  |
+|RF-009|                                                                                                               |       |
+|RF-010|                                                                                                               |       |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito                                                                                                      |Prioridade |
 |-------|-----------------------------------------------------------------------------------------------------------------------------|-----------|
-|RNF-001| A aplicação deve ser de fácil manutenção                                                                                    |   MÉDIA   | 
-|RNF-002| A aplicação deve conter os padrões de segurança da informação                                                               |   MÉDIA   | 
-|RNF-003| A aplicação deve emitir LOG de erros na tela de login                                                                       |   MÉDIA   | 
-|RNF-004| Todas as funcionalidades da aplicação devem ter um tempo de resposta de no máximo 5 segundos                                |   MÉDIA   | 
-|RNF-005| A aplicação deverá conter armazenamento de informações em Banco de Dados SQL Server                                         |   MÉDIA   | 
-|RNF-006| A aplicação deverá ser desenvolvida em HTML, CSS, JavaScript e C#                                                           |   MÉDIA   | 
-|RNF-007| A aplicação deverá seguir padrões de cores e fontes harmônicas                                                              |   MÉDIA   | 
-|RNF-008| A aplicação deverá respeitar a privacidade dos perfis, de forma que não apresente informações de perfis não selecionados    |   MÉDIA   | 
+|RNF-001| A aplicação deve permitir o uso da persistência de dados                                                                    |   MÉDIA   | 
+|RNF-002| A aplicação deve conter os padrões de segurança da informação                                                               |   ALTA    | 
+|RNF-003| A aplicação deve seguir os padrões de acessibilidade                                                                        |   ALTA    | 
+|RNF-004| Todas as funcionalidades da aplicação devem ter um tempo de resposta de, no máximo, 5 segundos                              |   MÉDIA   | 
+|RNF-005| A aplicação deve seguir a Lei Geral de Proteção de Dados                                                                    |   ALTA   | 
+|RNF-006|                                                                                                                             |      | 
+|RNF-007|                                                                                                                             |      | 
+|RNF-008|                                                                                                                             |      | 
 
 
 ## Restrições
@@ -193,13 +202,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ![Diagrama de Caso de Uso](img/Diagrama%20de%20Casos%20de%20Uso.jpeg)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
-
 # Matriz de Rastreabilidade
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
@@ -207,6 +209,31 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
 ![Matriz de rastreabilidade](img/matriz_rastreabilidade.PNG)
+
+## Técnicas de prioriozação dos requisitos
+
+A técnica utilizada para priorização de requisitos é a técnica Matriz GUT.
+
+![Matriz Gut](img/matrizgut.png)
+fonte: RockContent
+
+
+Conforme imagem acima, a técnica escolhida é utilizada para que se possa priorizar adequadamente os requisitos, visando entregar o que há de mais valioso dentro do escopo para o cliente. Onde U representa Urgência, G representa gravidade, T representa tendência. Facilitando a visualização para a equipe colocar esforços nos itens mais críticos.
+
+A matriz GUT funciona com uma pontuação para cada critério (de 1 a 5).
+
+A resposta se dá pela multiplicação das pontuações dos 3 fatores, resultando em um valor indicador. Quanto maior esse número, maior a prioridade da demanda.
+
+Pontuação = G x U x T
+Desta forma, calculou-se a prioridade dos requisitos, conforme abaixo:
+
+![Priorização Requisitos](img/requisitosPriorizados.png)
+
+# Qualidade do software
+
+A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabilidade, segurança e robustez da aplicação. Com base nas normas NBR 13596 ISO/IEC 9126-1, 2001
+
+Atualmente, não há nenhum teste de qualidade pois não há desenvolvimento.
 
 # Gerenciamento de Projeto
 

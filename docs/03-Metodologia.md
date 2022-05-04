@@ -59,11 +59,12 @@ O Scrum Master é o responsável pelo bom andamento da metodologia, treinando e 
 O Scrum é adequado para o trabalho com o GitFlow, já que as feature branches podem ser as tarefas de cada sprint; as hotfixes são as novas tarefas prioritárias no backlog; e as release features seriam a entrega de cada sprint.
 Assim, a equipe será dividida da seguinte forma:
 
-* Scrum Master:
-* Product Owner: 
+* Scrum Master: Rodrigo Lobenwein
+* Product Owner: Jéssica Gonçalves Dos Santos
 
 * Equipe de Desenvolvimento: 
     * Adilson Antônio Ferreira Junior
+    * Jéssica Gonçalves Dos Santos
     * José Flávio Miranda 
     * Pedro Henrique Pinto de Lacerda
     * Pedro Von Der Heide Souza
