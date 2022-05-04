@@ -152,7 +152,14 @@ Para que possamos medir o desempenho do projeto, usaremos os seguintes indicador
 * Quantidade de contratações concretizadas por semana
 
 * Percentual médio de preenchimento do perfil
+ 
+* Quantidade de downloads por mês
 
+* Quantidade de desinstalações por mês
+
+* Quantidade de usuários cadastrados de fato por mês
+
+* Medir o tempo de utilização do app e quantas vezes ele é aberto por dia
 
 ## Requisitos
 
