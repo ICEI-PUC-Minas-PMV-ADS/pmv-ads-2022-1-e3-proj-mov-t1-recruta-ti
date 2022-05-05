@@ -13,13 +13,21 @@ A funcionalidade do código do aplicativo não é necessariamente uniforme em to
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
 
-![Diagrama ER](img/Diagrama%20ER-%20Recruta%20TI.jpeg)
+![Diagrama ER](img/Diagrama_ER-RecrutaTI.jpeg)
 
 ## Esquema Relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
 ![Esquema Relacional](img/Esquema_relacional.jpg)
+
+Após o início do desenvolvimento da aplicação foi detectada a necessidade de alterações nas tabelas do banco de dados, como os campos de Linguagem das tabelas Certificados e Projetos, que serão uma chave estrangeira referenciando a tabela Linguagens.
+
+O Diagrama ER e o Modelo Relacional alterados pode ser vistos abaixo:
+
+![Diagrama ER Revisado](img/Diagrama_ER-RecrutaTI_R1.jpeg)
+
+![Esquema Relacional](img/Esquema_relacional_R1.jpg)
 
 ## Modelo Físico
 
