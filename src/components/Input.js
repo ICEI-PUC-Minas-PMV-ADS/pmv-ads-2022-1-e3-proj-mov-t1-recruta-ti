@@ -2,9 +2,9 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
 
-const Header = (props) => {
+const Input = (props) => {
   return (
-    <TextInput style={styles.input} keyboardType="decimal-pad" {...props} />
+    <TextInput style={styles.input} {...props} />
   );
 };
 
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Header;
+export default Input;
