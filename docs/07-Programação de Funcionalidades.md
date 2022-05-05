@@ -4,10 +4,10 @@
 
 ## Telas: Login e Registro (RF-001)
 - Responsável: Rodrigo Lobenwein
-- Situação: Em desenvolvimento (80% concluído)
+- Situação: concluído
 - Repositório (Expo): https://snack.expo.dev/@rodrigolobenwein/recruta-ti
 
-### Descrição:
+### **Descrição:**
 
 Para a criação das funcionalidades de Login e Registro foi necessária a criação de diversos arquivos, com diferentes objetivos, os quais são explicados abaixo:
 
@@ -42,7 +42,7 @@ Ambas as telas foram criadas utilizando os componentes, serviços, contexto e na
 ### **Problemas encontrados:**
 - A plataforma Expo é muito intuitiva e fácil de usar, ajudando bastante na criação e na formatação do código. Porém, estou tendo dificuldades na depuração do código e frequentemente perco horas para encontrar simples erros de digitação.
 - Outro dificultador no desenvolvimento é o JSON-Server e Local Tunnel: embora seja muito conveniente (e muito mais simples se comparado ao desenvolvimento completo de um backend para a aplicação), cada vez que o servidor é executado (após desligar ou reiniciar o computador, por exemplo), é gerada uma nova url que deve ser atualizada na aplicação (razão pela qual foi criado o serviço urls.js mencionado anteriormente).
-- É possível a utilização do JSON-Server no Heroku, o que manteria a url inalterada. De fato, foi criada a aplicação naquela plataforma (que pode ser vista em https://fake-api-json-server-recrutati.herokuapp.com/). Entretanto, até o momento não consegui resultados práticos: a aplicação consegue se conectar, mas as requisições retornam o erro 404 e eu ainda não descobri a causa.
+- É possível a utilização do JSON-Server no Heroku, o que manteria a url inalterada. De fato, foi criada a aplicação naquela plataforma (que pode ser vista em https://fake-api-json-server-recrutati.herokuapp.com/). Entretanto, até o momento não consegui resultados práticos: a aplicação consegue se conectar ao servidor, mas as requisições retornam o erro 404 e eu ainda não descobri a causa.
 
 ### **Trecho de Código:**
 ```Javascript
@@ -66,9 +66,9 @@ export default Body;
 
 
 ### **Próximos Passos:**
-Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização do JSON-Server no Heroku, após a finalização das funcionalidades Login e Registro. Também tentarei implementar outras funcionalidades do projeto.
+Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização do JSON-Server no Heroku.Também tentarei implementar a validação dos dados no registro, como tamanho mínimo e máximo da senha.
 
-### **Video: [Link]**
+### **Video: https://youtu.be/5QFgQfM3Gog**
 
 ---
 
