@@ -7,6 +7,12 @@
 - Situação: concluído
 - Repositório (Expo): https://snack.expo.dev/@rodrigolobenwein/recruta-ti
 
+### **Screenshots:**
+![Login](/docs/img/print_Login.png)
+![Registro](/docs/img/print_Registro.png)
+
+
+
 ### **Descrição:**
 
 Para a criação das funcionalidades de Login e Registro foi necessária a criação de diversos arquivos, com diferentes objetivos, os quais são explicados abaixo:
