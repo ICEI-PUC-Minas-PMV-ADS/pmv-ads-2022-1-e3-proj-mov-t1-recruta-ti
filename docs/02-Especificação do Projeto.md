@@ -146,14 +146,14 @@ Para que possamos medir o desempenho do projeto, usaremos os seguintes indicador
 |    #    |    **Indicador**    |     **Objetivos**   |    **Descrição**    |     **Cálculo**     |      **Fonte**      |    **Perspectiva**  |
 |---------|---------------------|---------------------|---------------------|---------------------|---------------------|---------------------|
 |    1    | Quantidade de cadastros de profissionais de TI |   Acompanhar o crescimento do aplicativo    |   Avaliar a quantidade de cadastros de profissionais de TI efetivados   |   nº de cadastros de profissionais de TI/período   |   Playstore   |      |
-|    2    | Quantidade cadastros de recrutadores |      |   Avaliar a quantidade de cadastros de recrutadores   |   nº de cadastros de recrutadores efetivados/período   |   Playstore   |      |
-|    3    | Quantidade de mensagens enviadas |      |   Avaliar a quantidade de mensagens enviadas   |   nº de contratações concretizadas/semana   |   Playstore   |      |
-|    4    | Quantidade de contratações concretizadas por semana |      |   Avaliar a quantidade de contratações concretizadas por semana   |   nº de cadastros de profissionais de TI/período   |   Playstore   |      |
-|    5    | Percentual médio de preenchimento do perfil |      |   Avaliar o percentual médio de preenchimento do perfil   |   percentual médio de preenchimento de perfil/período  |   Playstore   |      |
+|    2    | Quantidade cadastros de recrutadores | Avaliar se os recrutadores também estão usando a ferramenta |   Avaliar a quantidade de cadastros de recrutadores   |   nº de cadastros de recrutadores efetivados/período   |   Playstore   |      |
+|    3    | Quantidade de mensagens enviadas | Avaliar o fluxo de troca de mensagens   |   Avaliar a quantidade de mensagens enviadas   |   nº de contratações concretizadas/semana   |   Playstore   |   Registro de interações   |
+|    4    | Quantidade de contratações concretizadas por semana |   Avaliar a efetividade do app   |   Avaliar a quantidade de contratações concretizadas por semana   |   nº de cadastros de profissionais de TI/período   |   Playstore   |      |
+|    5    | Percentual médio de preenchimento do perfil |      |   Avaliar o percentual médio de preenchimento do perfil   |   percentual médio de preenchimento de perfil/período  |   Playstore   |   Efetividade   |
 |    6    | Quantidade de downloads por mês |   Acompanhar o crescimento do aplicativo   |   Avaliar a taxa de downloads realizados na loja   |   nº de downloands/período   |   Playstore   |   Crescimento e Aprendizado   |
-|    7    | Quantidade de desinstalações por mês |      |   Avaliar a quantidade de desinstalações por mês   |   nº de desinstalações/mês   |   Playstore   |      |
-|    8    | Quantidade de usuários cadastrados de fato por mês |      |   Avaliar a quantidade de usuários cadastrados de fato por mês   |   nº de usuários cadastrados de fato/mês   |   Playstore   |      |
-|    9    | Medir o tempo de utilização do app e quantas vezes ele é aberto por dia |      |   Avaliar o tempo de utilização do app e quantas vezes ele é aberto por dia   |   tempo de utilizaçãodo app/dia  e  nº de vezes que o app é aberto/dia  |   Playstore   |      |
+|    7    | Quantidade de desinstalações por mês |   Entender os motivos das desinstalações   |   Avaliar a quantidade de desinstalações por mês   |   nº de desinstalações/mês   |   Playstore   |   Processos internos   |
+|    8    | Quantidade de usuários cadastrados de fato por mês |   Avaliar o sucesso do aplicativo   |   Avaliar a quantidade de usuários cadastrados de fato por mês   |   nº de usuários cadastrados de fato/mês   |   Playstore   |   Crescimento   |
+|    9    | Medir o tempo de utilização do app e quantas vezes ele é aberto por dia |   Avaliar a importância do app   |   Avaliar o tempo de utilização do app e quantas vezes ele é aberto por dia   |   tempo de utilização do app/dia  e  nº de vezes que o app é aberto/dia  |   Playstore   |   Processos Internos   |
 
 ## Requisitos
 
