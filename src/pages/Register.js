@@ -16,14 +16,14 @@ const Register = () => {
   const navigation = useNavigation();
 
   const [name, setName] = useState('Rodrigo Lobenwein');
-  const [email, setEmail] = useState('rodrigo@sixpro.pro');
-  const [password, setPassword] = useState('Teste123!');
+  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
+  const [password, setPassword] = useState('123456');
 
   const handleRegister = () => {
     
     register({
       name: name,
-      email:email,
+      email: email,
       password: password
     }).then( res => {
       console.log(res);
@@ -31,7 +31,8 @@ const Register = () => {
       if(res){
         Alert.alert('Atenção','Usuário cadastrado com sucesso!');
       }else{
-        Alert.alert('Atenção','Usuário não foi cadastrado! Tente novamente mais tarde');
+
+        Alert.alert('Atenção: Erro!','Usuário não foi cadastrado! Tente novamente mais tarde');
       }
     });
   }

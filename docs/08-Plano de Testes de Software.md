@@ -2,18 +2,64 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+|Caso de teste | TC-001  |
+|------|------------|
+|Item de Teste | Login Padrão |
+|Requisito | RF-001 |
+|Especificações de entrada | Email: rodrigo.lobenwein@sga.pucminas.br Senha: 123456
+|Procedimento | Inserir o Email na área "Email", Inserir a senha na área "Senha", Clicar em "Login" |
+|Resultado Esperado | Visualização da Tela "Perfil do Profissional" |
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+|Caso de teste | TC-002  |
+|------|------------|
+|Item de Teste | Login recusado 
+|Requisito | RF-001 |
+|Especificações de entrada | Email: rodrigo@sga.pucminas.br Senha: 123456
+|Procedimento | Inserir o Email na área "Email", Inserir a senha na área "Senha", Clicar em "Login" |
+|Resultado Esperado | Visualização da mensagem de alerta "Usuário/senha inválidos " |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+|Caso de teste | TC-003  |
+|------|------------|
+|Item de Teste | Login recusado 
+|Requisito | RF-001 |
+|Especificações de entrada | Email: rodrigo.lobenwein@sga.pucminas.br Senha: 654321123456
+|Procedimento | Inserir o Email na área "Email", Inserir a senha na área "Senha", Clicar em "Login" |
+|Resultado Esperado | Visualização da mensagem de alerta "Usuário/senha inválidos " |
+
+|Caso de teste | TC-004  |
+|------|------------|
+|Item de Teste | Registro padrão 
+|Requisito | RF-001 |
+|Especificações de entrada | Nome: Fernando Resende Email: fernando@gmail.com Senha: 123456
+|Procedimento | Inserir os dados de entrada nas área correspondentes |
+|Resultado Esperado | Visualização da mensagem de alerta "Usuário cadastrado com sucesso!" |
+
+|Caso de teste | TC-005  |
+|------|------------|
+|Item de Teste | Registro com email repetido 
+|Requisito | RF-001 |
+|Especificações de entrada | Nome: Fernando Andrade Email: fernando@gmail.com Senha: 123456
+|Procedimento | Inserir os dados de entrada nas área correspondentes |
+|Resultado Esperado | Visualização da mensagem de alerta "Usuário não foi cadastrado! Tente novamente mais tarde" |
+
+|Caso de teste | TC-006 |
+|------|------------|
+|Item de Teste | Avaliação do tempo de resposta 
+|Requisito | RNF-004 |
+|Procedimento | Avaliar o tempo de resposta do servidor nos casos de teste TC-001 a TC-005 |
+|Resultado Esperado | Tempo de resposta inferior a 5 segundos |
+
+|Caso de teste | TC-007 |
+|------|------------|
+|Item de Teste | Campo de senha não deve mostrar a senha digitada 
+|Requisito | RNF-002 |
+|Procedimento | Verificar se os caracteres do campo senha estão ocultos  |
+|Resultado Esperado | A senha não é exibida |
+
+|Caso de teste | TC-008 |
+|------|------------|
+|Item de Teste | Criptografia da senha 
+|Requisito | RNF-002 |
+|Procedimento | Verificar se senha armazenada no banco de dados está criptografada  |
+|Resultado Esperado | As senhas armazenadas estão criptografadas |
+

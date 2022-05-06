@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Alert } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 import { TextInput, Button, Headline } from 'react-native-paper';
 
 import Container from '../components/Container';
@@ -10,12 +12,36 @@ import Logo from '../components/Logo';
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '../contexts/UserContext';
 
+import {login} from '../services/auth.services';
+
 const Login = () => {
   const navigation = useNavigation();
-  const { setSigned } = useUser();
+  const { setSigned, setName } = useUser();
 
-  const [email, setEmail] = useState('rodrigo@sixpro.pro');
-  const [password, setPassword] = useState('Teste123!');
+  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
+  const [password, setPassword] = useState('123456');
+
+   const handleLogin= () => {
+
+    login({
+      email: email,
+      password: password
+    }).then( res => {
+      console.log('res: ',res);
+
+      if(res && res.user){
+        setSigned(true);
+        setName(res.user.name);
+        AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
+      }else{
+        console.log('Error: ');
+        Alert.alert('Atenção', 'Usuário ou senha inválidos!');
+      }
+
+    });
+    
+  }
+
 
   return (
     <Container>
@@ -39,7 +65,7 @@ const Login = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={() => setSigned(true)}>
+          onPress={handleLogin}>
           Login
         </Button>
         <Button
