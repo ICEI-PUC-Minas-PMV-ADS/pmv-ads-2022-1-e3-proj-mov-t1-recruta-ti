@@ -42,3 +42,24 @@
 |Procedimento | Inserir os dados de entrada nas área correspondentes |
 |Resultado Esperado | Visualização da mensagem de alerta "Usuário não foi cadastrado! Tente novamente mais tarde" |
 
+|Caso de teste | TC-006 |
+|------|------------|
+|Item de Teste | Avaliação do tempo de resposta 
+|Requisito | RNF-004 |
+|Procedimento | Avaliar o tempo de resposta do servidor nos casos de teste TC-001 a TC-005 |
+|Resultado Esperado | Tempo de resposta inferior a 5 segundos |
+
+|Caso de teste | TC-007 |
+|------|------------|
+|Item de Teste | Campo de senha não deve mostrar a senha digitada 
+|Requisito | RNF-002 |
+|Procedimento | Verificar se os caracteres do campo senha estão ocultos  |
+|Resultado Esperado | A senha não é exibida |
+
+|Caso de teste | TC-008 |
+|------|------------|
+|Item de Teste | Criptografia da senha 
+|Requisito | RNF-002 |
+|Procedimento | Verificar se senha armazenada no banco de dados está criptografada  |
+|Resultado Esperado | As senhas armazenadas estão criptografadas |
+
