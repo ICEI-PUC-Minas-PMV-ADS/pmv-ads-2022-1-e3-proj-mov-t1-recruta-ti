@@ -12,8 +12,7 @@ Projeto para criação de uma plataforma móvel especializada no recrutamento de
 
 * Adilson Antônio Ferreira Junior
 * Jéssica Gonçalves Dos Santos
-* José Flávio Miranda 
-* Pedro Henrique Pinto de Lacerda
+* José Flávio Miranda
 * Pedro Von Der Heide Souza
 * Rodrigo Lobenwein Resende
 * Vera Lúcia Gonçalves Almeida
