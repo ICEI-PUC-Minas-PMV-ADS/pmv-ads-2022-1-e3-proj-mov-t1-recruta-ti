@@ -90,6 +90,12 @@ Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização 
 
 Criação da tela de Idiomas, que tem como função disponibilizar diversos idiomas e níveis no Idioma para inserção na página de perfil do profissional.
 
+### **Problemas encontrados:**
+- Corroboro com o que foiditoa cima pelo Rodrigo.
+- Encontrei dificuldades em visualizar a tela em que estou desenvolvendo (caso existam outras) sem que seja chamada por um botão em uma outra página. Acho que deveria ter a possibilidade de escolher qual tela você quer visualizar enquanto desenvolve.
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.
+- Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
+
 ### **Trecho de Código:**
 ```Javascript
 import * as React from 'react';
