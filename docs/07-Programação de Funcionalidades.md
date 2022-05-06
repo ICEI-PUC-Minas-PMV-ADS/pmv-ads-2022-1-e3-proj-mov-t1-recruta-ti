@@ -78,13 +78,63 @@ Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização 
 
 ---
 
-## Tela: 
-> - Responsável: 
-> - Situação: 
-> - Repositório (Expo):
+## Tela: Tela de Seleção de Idiomas
+> - Responsável: Pedro von der Heide Souza
+> - Situação: Em desenvolvimento
+> - Repositório (Expo): https://snack.expo.dev/@pedrovdh/recruta-ti
+
+### **Screenshots:**
+![image](https://user-images.githubusercontent.com/83302547/167213316-56922446-1ecd-44d1-80ef-136615e5a5d0.png)
 
 ### Descrição:
 
-### **Video: [Link]**
+Criação da tela de Idiomas, que tem como função disponibilizar diversos idiomas e níveis no Idioma para inserção na página de perfil do profissional.
+
+### **Trecho de Código:**
+```Javascript
+import * as React from 'react';
+import { RadioButton } from 'react-native-paper';
+import { Searchbar } from 'react-native-paper'; 
+import { View } from 'react-native'; 
+
+import Body from '../components/Body';
+import Container from '../components/Container';
+import Header from '../components/Header';
+
+import Search from '../components/Search';
+
+const Idiomas = () => {
+  const [value, setValue] = React.useState('first');
+  const [searchQuery, setSearchQuery] = React.useState('');
+
+
+  const onChangeSearch = query => setSearchQuery(query);
+  return (
+  <Container>  
+  <Header>
+  </Header>
+  <Body>
+ <Search/>
+    <RadioButton.Group onValueChange={value => setValue(value)} value={value}>
+      <RadioButton.Item label="Inglês" value="first" />
+      <RadioButton.Item label="Espanhol" value="second" />
+      <RadioButton.Item label="Francês" value="third" />
+      <RadioButton.Item label="Alemão" value="fourth" />
+      <RadioButton.Item label="Italiano" value="fifth" />
+    </RadioButton.Group>
+    </Body>
+    </Container>   
+  );
+};
+
+export default Idiomas;
+```
+
+
+### **Próximos Passos:**
+Aprimorar o desenvolvimento da tela, criando a possibilidade de inserção de idiomas, escolha de idioma e possibilidade definir o nível de domínio dos idiomas selecionados.
+
+
+### **Video: [Link]https://youtu.be/SyPvJEba-28**
 
 ---
