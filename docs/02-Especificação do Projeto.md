@@ -228,7 +228,7 @@ A resposta se dá pela multiplicação das pontuações dos 3 fatores, resultand
 Pontuação = G x U x T
 Desta forma, calculou-se a prioridade dos requisitos, conforme abaixo:
 
-![Priorização Requisitos](img/requisitosPriorizados.png)
+![Priorização Requisitos](img/requisitoPriorizado.png)
 
 # Qualidade do software
 
