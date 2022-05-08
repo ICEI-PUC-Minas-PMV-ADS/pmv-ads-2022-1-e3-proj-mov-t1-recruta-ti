@@ -144,3 +144,62 @@ Aprimorar o desenvolvimento da tela, criando a possibilidade de inserção de id
 ### **Video: [Link]https://youtu.be/SyPvJEba-28**
 
 ---
+
+
+## Tela: Tela de Mensagens
+> - Responsável: Vera Lúcia Gonçalves Almeida
+> - Situação: Em desenvolvimento
+> - Repositório (Expo): https://snack.expo.dev/@vera.almeida/recruta-ti-mens
+
+### **Screenshots:**
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Tela%20de%20mensagens.png)
+
+### Descrição:
+
+Criação da tela de Mensagens, que tem como função disponibilizar um canal de comunicação entre o Recrutador e o Profissional de seu interesse e para a resposta do Profissional para o Recrutador.
+
+### **Problemas encontrados:**
+- Conforme o Pedro e o Rodrigo, também concordo com o que disseram (deixo a copia do texto deles)
+- Encontrei dificuldades em visualizar a tela em que estou desenvolvendo (caso existam outras) sem que seja chamada por um botão em uma outra página. Acho que deveria ter a possibilidade de escolher qual tela você quer visualizar enquanto desenvolve.
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.
+- Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
+- Devido ao meu tempo curto, tornou mais difícil o entendimento.
+
+### **Trecho de Código:**
+```Javascript
+import React, { useState } from 'react';
+import { View, StyleSheet, Text, Button } from 'react-native';
+import Mensagem from './src/components/Mensagem'
+
+const App = () => {
+  const [Mensagem, setMensagem]=useState(0);
+
+  return (
+    <View style={styles.container}>
+    <Text style={styles.text}> Novas Mensagens </Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#d0ecec'
+  },
+  text:{
+    fontSize: 15,
+    textAlign: 'center',
+    paddingTop: 80,
+
+  }
+});
+
+export default App;
+```
+
+
+### **Próximos Passos:**
+Conseguir criar a tela completamente, pois foi feita apenas a base de uma delas.
+
+
+### **Video: [Link]https://screenrec.com/share/j4DvF23d5K**
