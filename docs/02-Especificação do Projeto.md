@@ -236,6 +236,8 @@ A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabil
 
 ![Qualidade com base nas funcionalidades](img/qualidadeFuncionalidade.PNG)
 
+![Qualidade com base na Confiabilidade](img/qualidadeConfiabilidade.PNG)
+
 
 # Gerenciamento de Projeto
 
