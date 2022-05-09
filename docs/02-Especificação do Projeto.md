@@ -240,6 +240,10 @@ A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabil
 
 ![Qualidade com base na Usabilidade](img/qualidadeUsabilidade.PNG)
 
+![Qualidade com base na Manutenibilidade](img/qualidadeManutenibilidade.PNG)
+
+![Qualidade com base na Portabilidade](img/qualidadePortabilidade.PNG)
+
 
 # Gerenciamento de Projeto
 
