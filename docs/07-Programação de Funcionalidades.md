@@ -203,3 +203,79 @@ Conseguir criar a tela completamente, pois foi feita apenas a base de uma delas.
 
 
 ### **Video: [Link]https://screenrec.com/share/j4DvF23d5K**
+
+## Tela: Login e Registro do recrutador
+> - Responsável: Pedro Henrique Pinto de Lacerda
+> - Situação: Em desenvolvimento
+> - Repositório (GitHub): https://github.com/pedrohplacerda/recruta-ti
+
+### Descrição:
+
+Criação da tela de login e registro do recrutador dentro da platoforma
+
+### **Problemas encontrados:**
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
+- Devido ao meu tempo curto, tornou mais difícil o entendimento.
+
+### **Trecho de Código:**
+```Javascript
+const App = () => {
+
+  const [email, setEmail] = React.useState("");
+  const [senha, setSenha] = React.useState("");
+
+  return (
+    <Container>
+      <Header title={"Recruta-TI"} />
+      <Image style={styles.logo}
+        source={require('../recruta-ti/assets/icon.png')}
+      />
+      <Text style={styles.text}>
+        Recrutador, Seja Bem Vindo (a)!
+      </Text>
+      <Body>
+        <Input
+          label="Email"
+          value={email}
+          onChangeText={email => setEmail(email)}
+        />
+        <Input
+          label="Senha"
+          value={senha}
+          onChangeText={senha => setSenha(senha)}
+        />
+        <Text style={styles.text}>
+          Esqueci minha senha
+        </Text>
+        <Button mode="contained" onPress={() => console.log('Pressed')}>
+          Login
+        </Button>
+      </Body>
+    </Container>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    fontWeight: 'normal'
+  },
+  logo: {
+    width: 66,
+    height: 58,
+    alignContent: 'center'
+  }
+});
+
+export default App;
+```
+
+
+### **Próximos Passos:**
+
+Implementar as funções de navegação e deixar os botões funcionais, além de melhorar o design conforme o figma.
+
+### **Video: [Link]https://youtu.be/_sFVdyGxv7U**
+
+
