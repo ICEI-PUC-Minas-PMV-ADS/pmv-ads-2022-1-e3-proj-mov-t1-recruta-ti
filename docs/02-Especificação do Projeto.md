@@ -234,7 +234,8 @@ Desta forma, calculou-se a prioridade dos requisitos, conforme abaixo:
 
 A proposta desta aplicação visa garantir qualidade, rastreabilidade, confiabilidade, segurança e robustez da aplicação. Com base nas normas NBR 13596 ISO/IEC 9126-1, 2001
 
-Atualmente, não há nenhum teste de qualidade pois não há desenvolvimento.
+![Qualidade com base nas funcionalidades](img/qualidadeFuncionalidade.PNG)
+
 
 # Gerenciamento de Projeto
 
