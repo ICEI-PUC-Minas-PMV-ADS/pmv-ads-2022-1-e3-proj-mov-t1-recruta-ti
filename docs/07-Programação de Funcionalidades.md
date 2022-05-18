@@ -308,3 +308,66 @@ Implementar as funções de navegação e deixar os botões funcionais, além de
 ### **Video: [Link]https://youtu.be/_sFVdyGxv7U**
 
 
+## Consumo API do GitHUb
+> - Responsável: Adilson Antônio Ferreira Júnior
+> - Situação: Em desenvolvimento
+> - Repositório (EXPO): https://snack.expo.dev/@adilsonjunior/84762f
+
+### Descrição:
+
+Consumir a API do GitHub para demonstrar na tela os dados do usuário.
+
+### **Problemas encontrados:**
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.
+- Dificuldades no desenvolvimento do código para atingir o resultado. Em alguns momentos, no programa EXPO, o nosso aplicativo não funcionava e algumas importações apresentavam erros mesmo utilizando exemplos do código da aula do professor Kléber e outros da internet.
+
+### **Trecho de Código:**
+```Javascript
+import React, { useEffect, useState } from "react";
+import api from "../services/api.git";
+import Input from '../components/Input';
+
+export default function App() {
+  const [user, setUser] = useState();
+  const [userGit, setUserGit] = useState();
+
+  useEffect(() => {
+    api
+      .get(userGit)
+      .then((response) => setUser(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  });
+
+  return (
+    <div className="App">
+      <Input
+          label="Usuário GitHub"
+          value={userGit}
+          onChangeText={(text) => setUserGit(text)}
+        />
+      <p>Nome: {user?.name}</p>
+      <p>Usuário: {user?.login}</p>
+      <p>Repositório: {user?.repos_url}</p>
+      <p>Quantidade de Repositórios: {user?.public_repos}</p>
+    </div>
+  );
+}
+```
+```Javascript
+import axios from "axios";
+
+const api = axios.create({
+  baseURL: "https://api.github.com/users/",
+});
+
+export default api;
+
+```
+
+### **Próximos Passos:**
+
+Melhorar o código de maneira funcional e a apresentação na tela do aplicativo.
+
+### **Video: [Link]https://youtu.be/8u_faHvA9Vs**
