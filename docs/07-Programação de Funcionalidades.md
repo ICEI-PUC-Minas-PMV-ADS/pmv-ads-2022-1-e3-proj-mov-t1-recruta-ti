@@ -70,7 +70,36 @@ const styles = StyleSheet.create({
 export default Body;
 ```
 
+### **Melhorias implementadas (a partir de 09/05/2022):**
+- Nos componentes TextInput foi adicionada a propriedade para mudança do leiaute do teclado (`keyboardType`) para os campos de email (Telas de Login e Registro). Assim, o teclado exibido já inclui uma tecla para @ e uma tecla ".com".
+- Também foi adicionada a propriedade `autoCapitalize`:
+  - Campos de e-mail: `none` - o teclado é aberto em letras minúsculas;
+  - Campo de nome: `words` - o teclado muda automaticamente para letras maiúsculas quando é inserido o caractere de espaço.
+- Adicionada função de validação do e-mail nas telas de Login e Registro;
 
+### **Trecho de Código das melhorias implementadas:**
+```Javascript
+<Button
+          style={styles.button}
+          mode="contained"
+          onPress={()=> {
+            if(ValidateEmail(email))
+            {
+              if(ValidatePassword(password))
+              {
+              handleRegister;
+              }
+              else
+              {
+                Alert.alert('Senha fraca!','A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número um caracter especial!');
+              }
+            }
+            else
+            {
+              Alert.alert('Erro!','Endereço de e-mail inválido!');
+            }
+          }}>
+```
 ### **Próximos Passos:**
 Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização do JSON-Server no Heroku.Também tentarei implementar a validação dos dados no registro, como tamanho mínimo e máximo da senha.
 
