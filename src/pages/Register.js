@@ -6,6 +6,8 @@ import Container from '../components/Container';
 import Body from '../components/Body';
 import Input from '../components/Input';
 import Logo from '../components/Logo';
+import ValidateEmail from '../components/ValidateEmail';
+import ValidatePassword from '../components/ValidatePassword';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -15,9 +17,9 @@ const Register = () => {
   
   const navigation = useNavigation();
 
-  const [name, setName] = useState('Rodrigo Lobenwein');
-  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
-  const [password, setPassword] = useState('123456');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleRegister = () => {
     
@@ -25,11 +27,12 @@ const Register = () => {
       name: name,
       email: email,
       password: password
+    
     }).then( res => {
       console.log(res);
 
       if(res){
-        Alert.alert('Atenção','Usuário cadastrado com sucesso!');
+        Alert.alert('Sucesso!','Usuário cadastrado com sucesso!');
       }else{
 
         Alert.alert('Atenção: Erro!','Usuário não foi cadastrado! Tente novamente mais tarde');
@@ -46,12 +49,15 @@ const Register = () => {
       <Body>
         <Input
           label="Nome"
+          autoCapitalize='words'
           value={name}
           onChangeText={(text) => setName(text)}
           left={<TextInput.Icon name="account" />}
         />
         <Input
           label="Email"
+          autoCapitalize='none'
+          keyboardType ='email-address'
           value={email}
           onChangeText={(text) => setEmail(text)}
           left={<TextInput.Icon name="email" />}
@@ -66,7 +72,23 @@ const Register = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={handleRegister}>
+          onPress={()=> {
+            if(ValidateEmail(email))
+            {
+              if(ValidatePassword(password))
+              {
+              handleRegister;
+              }
+              else
+              {
+                Alert.alert('Senha fraca!','A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número um caracter especial!');
+              }
+            }
+            else
+            {
+              Alert.alert('Erro!','Endereço de e-mail inválido!');
+            }
+          }}>
           Registrar
         </Button>
         <Button

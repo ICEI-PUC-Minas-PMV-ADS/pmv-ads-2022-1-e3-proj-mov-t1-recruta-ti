@@ -8,6 +8,7 @@ import Container from '../components/Container';
 import Body from '../components/Body';
 import Input from '../components/Input';
 import Logo from '../components/Logo';
+import ValidadeEmail from '../components/ValidateEmail';
 
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '../contexts/UserContext';
@@ -18,8 +19,8 @@ const Login = () => {
   const navigation = useNavigation();
   const { setSigned, setName } = useUser();
 
-  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
-  const [password, setPassword] = useState('123456');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
    const handleLogin= () => {
 
@@ -52,6 +53,8 @@ const Login = () => {
         <Input
           label="Email"
           value={email}
+          autoCapitalize='none'
+          keyboardType ='email-address'
           onChangeText={(text) => setEmail(text)}
           left={<TextInput.Icon name="email" />}
         />
@@ -65,7 +68,16 @@ const Login = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={handleLogin}>
+          onPress={()=> {
+            if(ValidadeEmail(email))
+            {
+              handleLogin;
+              }
+            else
+            {
+              Alert.alert('Erro!','Endereço de e-mail inválido!');
+            }
+          }}>
           Login
         </Button>
         <Button
