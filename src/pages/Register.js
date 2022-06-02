@@ -11,10 +11,10 @@ import ValidatePassword from '../components/ValidatePassword';
 
 import { useNavigation } from '@react-navigation/native';
 
-import {register} from '../services/auth.services';
+import { register } from '../services/auth.services';
 
 const Register = () => {
-  
+
   const navigation = useNavigation();
 
   const [name, setName] = useState('');
@@ -22,22 +22,32 @@ const Register = () => {
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
+    if (ValidateEmail(email)) {
+      if (ValidatePassword(password)) {
+        register({
+          name: name,
+          email: email,
+          password: password
     
-    register({
-      name: name,
-      email: email,
-      password: password
+        }).then(res => {
+          if (res) {
+            Alert.alert('Sucesso!', 'Usuário cadastrado com sucesso!');
+            navigation.navigate('Login');
+          } else {
     
-    }).then( res => {
-      console.log(res);
-
-      if(res){
-        Alert.alert('Sucesso!','Usuário cadastrado com sucesso!');
-      }else{
-
-        Alert.alert('Atenção: Erro!','Usuário não foi cadastrado! Tente novamente mais tarde');
+            Alert.alert('Atenção: Erro!', 'Usuário não foi cadastrado! Tente novamente mais tarde');
+          }
+        });
+    
       }
-    });
+      else {
+        Alert.alert('Senha fraca!', 'A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (!@#$%^&)!');
+      }
+    }
+    else {
+      Alert.alert('Erro!', 'Endereço de e-mail inválido!');
+    }
+  
   }
 
   return (
@@ -57,7 +67,7 @@ const Register = () => {
         <Input
           label="Email"
           autoCapitalize='none'
-          keyboardType ='email-address'
+          keyboardType='email-address'
           value={email}
           onChangeText={(text) => setEmail(text)}
           left={<TextInput.Icon name="email" />}
@@ -72,23 +82,7 @@ const Register = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={()=> {
-            if(ValidateEmail(email))
-            {
-              if(ValidatePassword(password))
-              {
-              handleRegister;
-              }
-              else
-              {
-                Alert.alert('Senha fraca!','A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número um caracter especial!');
-              }
-            }
-            else
-            {
-              Alert.alert('Erro!','Endereço de e-mail inválido!');
-            }
-          }}>
+          onPress={handleRegister}>
           Registrar
         </Button>
         <Button
@@ -107,7 +101,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     backgroundColor: '#049c9c',
   },
-    textHeader: {
+  textHeader: {
     textAlign: 'center',
   },
   header: {

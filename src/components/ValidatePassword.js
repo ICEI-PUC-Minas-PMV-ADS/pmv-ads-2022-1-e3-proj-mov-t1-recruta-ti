@@ -1,10 +1,9 @@
-export default function ValidatePassword(password)
+function ValidatePassword(password)
 {
-  console.log('Email: ',password);
-  const strongRegex = new RegExp("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$");
-
-    if (!strongRegex.test(password))
-    {
+  const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+  
+  if (!strongRegex.test(password))
+  {
         return false;
     } 
     else if (password.length < 8)
@@ -16,3 +15,5 @@ export default function ValidatePassword(password)
       return true;
     }
 }
+
+export default ValidatePassword;

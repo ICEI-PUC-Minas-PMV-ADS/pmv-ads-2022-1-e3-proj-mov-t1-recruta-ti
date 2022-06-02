@@ -24,10 +24,11 @@ export const login = async (param) => {
   try {
     return await API.post(`${BASE_URL}/login`, param).then(
       (response) => {
+        console.log('Response: ',response.data);
         return response.data;
       },
       (error) => {
-        console.log(error);
+        console.log('Login: ',error);
         return null;
       }
     );

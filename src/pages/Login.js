@@ -8,12 +8,12 @@ import Container from '../components/Container';
 import Body from '../components/Body';
 import Input from '../components/Input';
 import Logo from '../components/Logo';
-import ValidadeEmail from '../components/ValidateEmail';
+import ValidateEmail from '../components/ValidateEmail';
 
 import { useNavigation } from '@react-navigation/native';
 import { useUser } from '../contexts/UserContext';
 
-import {login} from '../services/auth.services';
+import { login } from '../services/auth.services';
 
 const Login = () => {
   const navigation = useNavigation();
@@ -22,27 +22,27 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-   const handleLogin= () => {
+  const handleLogin = () => {
+    if (ValidateEmail(email)) {
+      login({
+        email: email,
+        password: password
+      }).then(res => {
+        if (res && res.user) {
+          setSigned(true);
+          setName(res.user.name);
+          AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
+        } else {
+          Alert.alert('Atenção', 'Usuário ou senha inválidos!');
+        }
 
-    login({
-      email: email,
-      password: password
-    }).then( res => {
-      console.log('res: ',res);
+      });
 
-      if(res && res.user){
-        setSigned(true);
-        setName(res.user.name);
-        AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
-      }else{
-        console.log('Error: ');
-        Alert.alert('Atenção', 'Usuário ou senha inválidos!');
-      }
-
-    });
-    
+    }
+    else {
+      Alert.alert('Erro!', 'Endereço de e-mail inválido!');
+    }
   }
-
 
   return (
     <Container>
@@ -54,7 +54,7 @@ const Login = () => {
           label="Email"
           value={email}
           autoCapitalize='none'
-          keyboardType ='email-address'
+          keyboardType='email-address'
           onChangeText={(text) => setEmail(text)}
           left={<TextInput.Icon name="email" />}
         />
@@ -68,16 +68,7 @@ const Login = () => {
         <Button
           style={styles.button}
           mode="contained"
-          onPress={()=> {
-            if(ValidadeEmail(email))
-            {
-              handleLogin;
-              }
-            else
-            {
-              Alert.alert('Erro!','Endereço de e-mail inválido!');
-            }
-          }}>
+          onPress={handleLogin}>
           Login
         </Button>
         <Button
@@ -91,6 +82,7 @@ const Login = () => {
   );
 };
 
+
 const styles = StyleSheet.create({
   button: {
     marginBottom: 8,
@@ -101,6 +93,6 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginBottom: 12,
   },
-});
+})
 
 export default Login;
