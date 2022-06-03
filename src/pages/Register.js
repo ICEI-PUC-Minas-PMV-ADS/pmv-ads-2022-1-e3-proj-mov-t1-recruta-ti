@@ -28,17 +28,15 @@ const Register = () => {
           name: name,
           email: email,
           password: password
-    
+
         }).then(res => {
           if (res) {
             Alert.alert('Sucesso!', 'Usuário cadastrado com sucesso!');
             navigation.navigate('Login');
           } else {
-    
             Alert.alert('Atenção: Erro!', 'Usuário não foi cadastrado! Tente novamente mais tarde');
           }
         });
-    
       }
       else {
         Alert.alert('Senha fraca!', 'A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (!@#$%^&)!');
@@ -47,7 +45,6 @@ const Register = () => {
     else {
       Alert.alert('Erro!', 'Endereço de e-mail inválido!');
     }
-  
   }
 
   return (

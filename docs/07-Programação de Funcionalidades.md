@@ -4,7 +4,7 @@
 
 ## Telas: Login e Registro (RF-001)
 - Responsável: Rodrigo Lobenwein
-- Situação: concluído
+- Situação: concluído com melhorias
 - Repositório (Expo): https://snack.expo.dev/@rodrigolobenwein/recruta-ti
 
 ### **Screenshots:**
@@ -69,41 +69,64 @@ const styles = StyleSheet.create({
 
 export default Body;
 ```
+### **Próximos Passos:**
+Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização do JSON-Server no Heroku.Também tentarei implementar a validação dos dados no registro, como tamanho mínimo e máximo da senha.
 
-### **Melhorias implementadas (a partir de 09/05/2022):**
+### **Melhorias implementadas (Etapa 4):**
 - Nos componentes TextInput foi adicionada a propriedade para mudança do leiaute do teclado (`keyboardType`) para os campos de email (Telas de Login e Registro). Assim, o teclado exibido já inclui uma tecla para @ e uma tecla ".com".
 - Também foi adicionada a propriedade `autoCapitalize`:
   - Campos de e-mail: `none` - o teclado é aberto em letras minúsculas;
   - Campo de nome: `words` - o teclado muda automaticamente para letras maiúsculas quando é inserido o caractere de espaço.
-- Adicionada função de validação do e-mail nas telas de Login e Registro;
+
+#### **Validação de dados:**
+- Foram adicionadas duas funções de validação dos dados de entrada do usuário: e-mail e senha.
+  - A função `ValidateEmail` (arquivo [ValidateEmail.js](/src/components/ValidateEmail.js)) verifica se o dado informado se parece com um endereço de e-mail (verifica se tem, no mínimo, uma sequência de caracteres, uma arroba, outra sequência de caracteres, um ponto e mais uma sequência de caracteres) e um ponto após).
+  - A função `ValidatePassword` (arquivo [ValidatePassword.js](/src/components/ValidatePassword.js)) verifica, através de uma função Regex (regular expression), se a senha possui pelo menos 8 caracteres, sendo uma letra maiúscula, uma minúscula, um número e um caractere especial.
+Adicionada função de validação do e-mail nas telas de Login e Registro;
+
+#### **Persistência de dados:**
+Em ambas as funcionalidades trabalhadas há utilização de persistência: na tela de Registro há a persistência remota, com a utilização da Fake API, e os dados são armazenados no BD; na tela de login, quando o login é realizado, é armazenado localmente o Token do usuário (persistência local), que é fornecido pelo JSON-Server-Auth.
+
+#### **Hospedagem:**
+O servidor foi hospedado no Heroku e pode ser acessado em [https://fake-api-json-server-recrutati.herokuapp.com/](https://fake-api-json-server-recrutati.herokuapp.com/).
 
 ### **Trecho de Código das melhorias implementadas:**
 ```Javascript
-<Button
-          style={styles.button}
-          mode="contained"
-          onPress={()=> {
-            if(ValidateEmail(email))
-            {
-              if(ValidatePassword(password))
-              {
-              handleRegister;
-              }
-              else
-              {
-                Alert.alert('Senha fraca!','A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número um caracter especial!');
-              }
-            }
-            else
-            {
-              Alert.alert('Erro!','Endereço de e-mail inválido!');
-            }
-          }}>
+  const handleRegister = () => {
+    if (ValidateEmail(email)) {
+      if (ValidatePassword(password)) {
+        register({
+          name: name,
+          email: email,
+          password: password
+        }).then(res => {
+          if (res) {
+            Alert.alert('Sucesso!', 'Usuário cadastrado com sucesso!');
+            navigation.navigate('Login');
+          } else {
+            Alert.alert('Atenção: Erro!', 'Usuário não foi cadastrado! Tente novamente mais tarde');
+          }
+        });
+      }
+      else {
+        Alert.alert('Senha fraca!', 'A senha deve ter no mínimo 8 dígitos, sendo: pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (!@#$%^&)!');
+      }
+    }
+    else {
+      Alert.alert('Erro!', 'Endereço de e-mail inválido!');
+    }
+  }
 ```
-### **Próximos Passos:**
-Na próxima etapa farei mais algumas pesquisas e tentativas para a utilização do JSON-Server no Heroku.Também tentarei implementar a validação dos dados no registro, como tamanho mínimo e máximo da senha.
+### **Problemas encontrados durante a Etapa 4:**
+A função de validação da senha não estava funcionando. Inicialmente, criei a função dentro do evento `onPress` do botão, que chamava a função `handleRegister` caso a senha estivesse válida. Mas, após vários testes, descobri que a validação deveria ser dentro da função `handleRegister`. O mesmo ocorreu para a validação do e-mail (tanto no Registro quanto no Login).
 
-### **Video: https://youtu.be/5QFgQfM3Gog**
+Tive enorme dificuldade para hospedar o JSON-Server no Heroku.
+Li na documentação tanto do [JSON-Server](https://github.com/typicode/json-server) quanto do [JSON-Server-auth](https://github.com/jeremyben/json-server-auth) como fazer quais os dados necessários no arquivo server.js. Eu não havia me atentado ao fato de que é necessário o JSON-Server-Auth neste arquivo, e provavelmente era este o motivo dos erros encontrados durante a etapa 3 (Resposta 404 às requisições).
+Mesmo com estas alterações, ao construir o servidor no Heroku, o log sempre informava o erro `Cannot find module 'json-server`. Após diversas pesquisas descobri que o Heroku não estava instalando o JSON-Server (nem o Auth) porque ambos estavam listados no `package.json` em `devDependencies`.
+Ajustadas as dependências, o erro anterior foi resolvido. Entretanto, um novo erro foi lançado: `Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch`). Neste ponto descobri que o Heroku designa dinamicamente as portas para as aplicações. Assim, o código `app.listen(3000)` foi alterado para `app.listen(process.env.PORT || 3000)`.
+
+### **Vídeo etapa 3: https://youtu.be/5QFgQfM3Gog**
+### **Vídeo etapa 4: https://youtu.be/tjvHG5TXkIU**
 
 ---
 
