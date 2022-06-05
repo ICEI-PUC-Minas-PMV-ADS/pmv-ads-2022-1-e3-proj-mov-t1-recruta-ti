@@ -198,13 +198,14 @@ Aprimorar o desenvolvimento da tela, criando a possibilidade de inserção de id
 ---
 
 
-## Tela: Tela de Mensagens
+## Telas: Caixa de Mensagens e Tela de Mensagens
 > - Responsável: Vera Lúcia Gonçalves Almeida
 > - Situação: Em desenvolvimento
-> - Repositório (Expo): https://snack.expo.dev/@vera.almeida/recruta-ti-mens
+> - Repositório (Expo): https://snack.expo.dev/@vera.almeida/caixa-de-mensagem
 
 ### **Screenshots:**
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Tela%20de%20mensagens.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Caixa%20de%20mensagens.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Tela%20de%20mensagens_02.png)
 
 ### Descrição:
 
@@ -220,29 +221,61 @@ Criação da tela de Mensagens, que tem como função disponibilizar um canal de
 ### **Trecho de Código:**
 ```Javascript
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, Button } from 'react-native';
-import Mensagem from './src/components/Mensagem'
+import {StyleSheet, View, Alert} from 'react-native';
+import {Appbar, TextInput, Button, Text} from 'react-native-paper';
+
+import Container from './../components/Container';
+import Header from './../components/Header';
+import Body from './../components/Body';
+import Input from './../components/Input';
+import Logo from '../components/Logo';
 
 const App = () => {
-  const [Mensagem, setMensagem]=useState(0);
+const [mensagens, setMensagens] = React.useState("");
+const [profissional, setProfissional] = React.useState("");
 
-  return (
-    <View style={styles.container}>
-    <Text style={styles.text}> Novas Mensagens </Text>
-    </View>
-  );
+const Mensagens = () =>{
+  const _goBack = () => console.log('Went back');
+
+  const _handleSearch = () => console.log('Searching');
+
+  const _handleMore = () => console.log('Shown more');
+
 }
+  return (
 
+    <Container>
+      <Header title={'Mensagens'} />
+      <Body>
+      <Text> Fale com o Profissional </Text>
+        <Input
+        label="Profissional"
+          style={styles.input}
+          onChangeText={setProfissional}
+          value={profissional}
+        />
+        <Input
+        label="Mensagem"
+          style={styles.input}
+          onChangeText={setMensagens}
+          value={mensagens}
+          multiline={true}
+          numberOfLines={8}
+          activeUnderlineColor="#DCDCDC"
+      />
+          <Button
+            style={styles.button}
+            mode="contained">
+            Enviar
+          </Button>
+      </Body>
+    </Container>
+  );
+};
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#d0ecec'
-  },
-  text:{
-    fontSize: 15,
-    textAlign: 'center',
-    paddingTop: 80,
-
+  button: {
+    marginBottom: 8,
+    backgroundColor: '#049c9c',
   }
 });
 
@@ -251,7 +284,7 @@ export default App;
 
 
 ### **Próximos Passos:**
-Conseguir criar a tela completamente, pois foi feita apenas a base de uma delas.
+Aprimorar as funcionalidades.
 
 
 ### **Video: [Link]https://screenrec.com/share/j4DvF23d5K**
