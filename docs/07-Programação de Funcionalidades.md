@@ -138,6 +138,8 @@ Ajustadas as dependências, o erro anterior foi resolvido. Entretanto, um novo e
 ### **Screenshots:**
 ![image](https://user-images.githubusercontent.com/83302547/172074516-80d43b1e-950e-409e-8a5e-03828dc7fbe3.png)
 
+### Observação: Não sei o motivo da tela ter ficado azul quando é utilizada pelo Android no Expo. No web, segue as mesmas cores do restante da aplicação.
+
 ### Descrição:
 
 Criação da tela de Idiomas, que tem como função disponibilizar diversos idiomas e níveis no Idioma para inserção na página de perfil do profissional.
