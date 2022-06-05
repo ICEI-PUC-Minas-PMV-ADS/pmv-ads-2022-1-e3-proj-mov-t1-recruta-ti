@@ -198,7 +198,7 @@ Aprimorar o desenvolvimento da tela, criando a possibilidade de inserção de id
 ---
 
 
-## Telas: Caixa de Mensagens e Tela de Mensagens
+## Telas: Caixa de Entrada e Mensagens
 > - Responsável: Vera Lúcia Gonçalves Almeida
 > - Situação: Em desenvolvimento
 > - Repositório (Expo): https://snack.expo.dev/@vera.almeida/caixa-de-mensagem
