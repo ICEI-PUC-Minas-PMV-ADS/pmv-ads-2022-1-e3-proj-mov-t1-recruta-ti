@@ -136,7 +136,7 @@ Ajustadas as dependências, o erro anterior foi resolvido. Entretanto, um novo e
 > - Repositório (Expo): https://snack.expo.dev/@pedrovdh/recruta-ti
 
 ### **Screenshots:**
-![image](https://user-images.githubusercontent.com/83302547/172074485-1d56ebe1-b594-4fc0-bbd5-6a06301c9717.png)
+![image](https://user-images.githubusercontent.com/83302547/172074516-80d43b1e-950e-409e-8a5e-03828dc7fbe3.png)
 
 ### Descrição:
 
