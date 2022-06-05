@@ -433,3 +433,135 @@ export default api;
 Melhorar o código de maneira funcional e a apresentação na tela do aplicativo.
 
 ### **Video: [Link]https://youtu.be/8u_faHvA9Vs**
+
+
+## Tela: Login e Registro do recrutador + caixa de entrada do recrutador + pesquisa de profissionais
+> - Responsável: Pedro Henrique Pinto de Lacerda
+> - Situação: Em desenvolvimento
+> - Repositório (GitHub): https://github.com/pedrohplacerda/recruta-ti
+
+### Descrição:
+
+Criação da tela de login e registro do recrutador dentro da platoforma, além da caixa de entrada do recrutador e pesquisa de profissionais.
+
+### **Problemas encontrados:**
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
+- Devido a meu emprego me consumir bastante tempo, eu não tenho conseguido me reunir com meus colegas como gostaria.
+
+### **Trecho de Código:**
+- Trecho do código da tela de login do recrutador
+```Javascript
+import React from 'react';
+import { StyleSheet, Image } from 'react-native';
+import { Appbar, TextInput, Button, Text } from 'react-native-paper';
+import Container from '../components/Container';
+import Header from '../components/Header';
+import Body from '../components/Body';
+import Input from '../components/Input';
+
+const LoginRecrutador = () => {
+
+  const [email, setEmail] = React.useState("");
+  const [senha, setSenha] = React.useState("");
+
+  return (
+    <Container>
+      <Header title={"Recruta-TI"} />
+      <Image style={styles.logo}
+      />
+      <Text style={styles.text}>
+        Recrutador, Seja Bem Vindo (a)!
+      </Text>
+      <Body>
+        <Input
+          label="Email"
+          value={email}
+          onChangeText={email => setEmail(email)}
+        />
+        <Input
+          label="Senha"
+          value={senha}
+          onChangeText={senha => setSenha(senha)}
+        />
+        <Text style={styles.text}>
+          Esqueci minha senha
+        </Text>
+        <Button mode="contained" onPress={() => console.log('Pressed')}>
+          Login
+        </Button>
+        <Text style={styles.text}>
+          Ainda não possui cadastro? Clique aqui.
+        </Text>
+      </Body>
+    </Container>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    fontWeight: 'normal'
+  },
+  logo: {
+    width: 66,
+    height: 58,
+    alignContent: 'center'
+  }
+});
+
+export default LoginRecrutador;
+```
+
+### **Trecho de Código:**
+- Trecho do código da tela de home onde fica os botões de navegação.
+```Javascript
+import * as React from 'react';
+import { BottomNavigation, Text } from 'react-native-paper';
+import CaixaDeEntrada from './CaixaDeEntrada';
+import LoginRecrutador from './LoginRecrutador'
+import PerfilRecrutador from './PerfilRecrutador';
+import PesquisarProfissionais from './PesquisarProfissionais';
+
+const Home = () => {
+  const [index, setIndex] = React.useState(0);
+  const [routes] = React.useState([
+    { key: 'login', title: 'Fazer login', icon: 'login' },
+    { key: 'conta', title: 'Conta', icon: 'account' },
+    { key: 'pesquisar', title: 'Pesquisar', icon: 'search-web' },
+    { key: 'caixaDeEntrada', title: 'Caixa de entrada', icon: 'email-outline' }
+  ]);
+
+  const renderScene = BottomNavigation.SceneMap({
+    login: LoginRecrutador,
+    conta: PerfilRecrutador,
+    pesquisar: PesquisarProfissionais,
+    caixaDeEntrada: CaixaDeEntrada
+  });
+
+  return (
+    <BottomNavigation
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={renderScene}
+    />
+  );
+};
+
+export default Home;
+```
+
+
+### **Screenshots:**
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/LoginRecrutador.jpg)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/PesquisarProfissionais.jpg)
+
+
+
+
+### **Próximos Passos:**
+
+Melhorar as funções de navegação. Implementar melhor o design de cada tela e também as telas de perfil do recrutador e caixa de entrada. 
+
+### **Video: [Link]https://youtu.be/vS7NwiZfDzI**
+
