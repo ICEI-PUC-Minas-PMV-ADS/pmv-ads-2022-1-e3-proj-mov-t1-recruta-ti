@@ -136,14 +136,14 @@ Ajustadas as dependências, o erro anterior foi resolvido. Entretanto, um novo e
 > - Repositório (Expo): https://snack.expo.dev/@pedrovdh/recruta-ti
 
 ### **Screenshots:**
-![image](https://user-images.githubusercontent.com/83302547/167213316-56922446-1ecd-44d1-80ef-136615e5a5d0.png)
+![image](![image](https://user-images.githubusercontent.com/83302547/172074427-f1f3f734-440e-4460-8c6c-f33b6389a470.png))
 
 ### Descrição:
 
 Criação da tela de Idiomas, que tem como função disponibilizar diversos idiomas e níveis no Idioma para inserção na página de perfil do profissional.
 
 ### **Problemas encontrados:**
-- Corroboro com o que foiditoa cima pelo Rodrigo.
+- Corroboro com o que foi dito acima pelo Rodrigo.
 - Encontrei dificuldades em visualizar a tela em que estou desenvolvendo (caso existam outras) sem que seja chamada por um botão em uma outra página. Acho que deveria ter a possibilidade de escolher qual tela você quer visualizar enquanto desenvolve.
 - Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.
 - Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
@@ -154,6 +154,7 @@ import * as React from 'react';
 import { RadioButton } from 'react-native-paper';
 import { Searchbar } from 'react-native-paper'; 
 import { View } from 'react-native'; 
+import { Button } from 'react-native-paper';
 
 import Body from '../components/Body';
 import Container from '../components/Container';
@@ -180,9 +181,12 @@ const Idiomas = () => {
       <RadioButton.Item label="Alemão" value="fourth" />
       <RadioButton.Item label="Italiano" value="fifth" />
     </RadioButton.Group>
+      <Button mode="contained" onPress={() => console.log('Salvar')}>
+    Salvar
+  </Button>
     </Body>
     </Container>   
-  );
+  );  
 };
 
 export default Idiomas;
