@@ -67,6 +67,6 @@
 |------|------------|
 |Item de Teste | Escrever Mensagem |
 |Requisito | RF-007 |
-|Procedimento | Clicar no ícone na BottomNavigation, escolher profissional a ser contactado na label profissional, escrever mensagem na label mensagem, clicar em Enviar. |
+|Procedimento | Clicar no ícone no Lápis no Bottom Navigation, escolher profissional a ser contactado na label profissional, escrever mensagem na label mensagem, clicar em Enviar. |
 |Resultado Esperado | Visualizar a notificação: "Mensagem enviada com sucesso". |
 
