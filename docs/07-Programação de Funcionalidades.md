@@ -287,7 +287,7 @@ export default App;
 Aprimorar as funcionalidades.
 
 
-### **Video: [Link]https://screenrec.com/share/j4DvF23d5K**
+### **Video: [https://screenrec.com/share/ZNnm9ah83V**
 
 ## Tela: Login e Registro do recrutador
 > - Responsável: Pedro Henrique Pinto de Lacerda
