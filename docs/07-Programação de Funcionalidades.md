@@ -137,7 +137,7 @@ Para a entrega final, criei também as funções de CRUD para linguagens, idioma
 ### **Vídeo etapa 4: https://youtu.be/tjvHG5TXkIU**
 ### **Vídeo de apresentação do projeto (Final): [Apresentação_Video.mp4](/presentation/Apresentacao_Video.mp4)**
 ### **Slides da apresentação do projeto: [Apresentação_PP.ppsx](/presentation/Apresentacao_PP.ppsx)**
-### **APK da aplicação: [recruta_TI.aab](/src/build/recruta_TI.aab)**
+### **APK da aplicação: [recruta_TI.aab](/src/distrib/recruta_TI.aab)**
 
 
 ---
