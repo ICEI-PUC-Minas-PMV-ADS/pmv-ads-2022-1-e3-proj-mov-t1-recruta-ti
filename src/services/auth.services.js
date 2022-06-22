@@ -5,12 +5,10 @@ export const register = async (param) => {
   try {
     return await API.post(`${BASE_URL}/register`, param).then(
       (response) => {
-        console.log(response);
         return response.data;
       },
       (error) => {
-        console.log('Register: ',error);
-                
+        console.log(error);
         return null;
       }
     );
@@ -23,6 +21,23 @@ export const register = async (param) => {
 export const login = async (param) => {
   try {
     return await API.post(`${BASE_URL}/login`, param).then(
+      (response) => {
+        return response.data;
+      },
+      (error) => {
+        console.log('Login: ',error);
+        return null;
+      }
+    );
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
+export const logout = async () => {
+  try {
+    return await API.post().then(
       (response) => {
         console.log('Response: ',response.data);
         return response.data;

@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.recrutati.snack03743327faf1440289400aba346d62f5"
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -125,8 +125,20 @@ Li na documentação tanto do [JSON-Server](https://github.com/typicode/json-ser
 Mesmo com estas alterações, ao construir o servidor no Heroku, o log sempre informava o erro `Cannot find module 'json-server`. Após diversas pesquisas descobri que o Heroku não estava instalando o JSON-Server (nem o Auth) porque ambos estavam listados no `package.json` em `devDependencies`.
 Ajustadas as dependências, o erro anterior foi resolvido. Entretanto, um novo erro foi lançado: `Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch`). Neste ponto descobri que o Heroku designa dinamicamente as portas para as aplicações. Assim, o código `app.listen(3000)` foi alterado para `app.listen(process.env.PORT || 3000)`.
 
+## Etapas 4 e 5 (conclusão):
+
+As últimas etapas do projeto consistiram na integração das funcionalidades desenvolvidas pela equipe. A principal dificuldade para a integração se deu devido a dois fatores: algumas funcionalidades precisaram ser desenvolvidas para permitir a integração, o que consumiu um tempo maior que o previsto inicialmente; outras funcionalides foram desenvolvidas em um padrão diferente do que eu utilizei, o que demandou adaptação dos códigos, consumindo, também, um prazo maior que o previsto inicialmente.
+Realizadas as adequações e adaptações, a principal atividade de integração foi o acréscimo de cada tela no arquivo de navegação principal e, após isso, a determinação dos locais tocáveis (botões, ícones) que levam a cada uma das telas.
+Para a entrega final, criei também as funções de CRUD para linguagens, idiomas e perfil (todos na pasta `services`).
+
+
+
 ### **Vídeo etapa 3: https://youtu.be/5QFgQfM3Gog**
 ### **Vídeo etapa 4: https://youtu.be/tjvHG5TXkIU**
+### **Vídeo de apresentação do projeto (Final): [Apresentação_Video.mp4](/presentation/Apresentacao_Video.mp4)**
+### **Slides da apresentação do projeto: [Apresentação_PP.ppsx](/presentation/Apresentacao_PP.ppsx)**
+### **APK da aplicação: [recruta_TI.aab](/src/build/recruta_TI.aab)**
+
 
 ---
 

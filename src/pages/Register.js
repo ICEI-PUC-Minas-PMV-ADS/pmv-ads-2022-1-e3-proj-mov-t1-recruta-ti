@@ -17,9 +17,9 @@ const Register = () => {
 
   const navigation = useNavigation();
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState('Rodrigo Lobenwein');
+  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
+  const [password, setPassword] = useState('Aaa@123456789');
 
   const handleRegister = () => {
     if (ValidateEmail(email)) {

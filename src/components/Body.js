@@ -1,8 +1,14 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
 
 const Body = ({ children }) => {
-  return <View style={styles.container}>{children}</View>;
+  return (
+    <ScrollView  >
+      <View style={styles.container}>
+        {children}
+      </View>
+    </ScrollView>
+  );
 };
 
 const styles = StyleSheet.create({

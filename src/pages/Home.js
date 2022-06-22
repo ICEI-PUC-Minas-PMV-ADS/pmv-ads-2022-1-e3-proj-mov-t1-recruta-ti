@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { BottomNavigation, Text } from 'react-native-paper';
-import { StyleSheet } from 'react-native';
 
-import Mensagens from './Mensagens';
+import CaixaDeEntrada from './CaixaDeEntrada';
 import Perfil from './Perfil';
 
 const Home = () => {
@@ -10,12 +9,12 @@ const Home = () => {
 
   const [routes] = useState([
     { key: 'perfil', title: 'Perfil', icon: 'account-star' },
-    { key: 'mensagens', title: 'Mensagens', icon: 'email-box' },
+    { key: 'caixaDeEntrada', title: 'Caixa de Entrada', icon: 'email-box' },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
     perfil: Perfil,
-    mensagens: Mensagens,
+    caixaDeEntrada: CaixaDeEntrada,
   });
 
   return (

@@ -1,58 +1,55 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Alert } from 'react-native';
-import {
-  Avatar,
-  Appbar,
-  TextInput,
-  Button,
-  Text,
-  Card,
-  Title,
-  Paragraph,
-} from 'react-native-paper';
+import {StyleSheet} from 'react-native';
+import {Button, Text} from 'react-native-paper';
 
 import Container from './../components/Container';
 import Header from './../components/Header';
 import Body from './../components/Body';
 import Input from './../components/Input';
 
-const Mensagens = () => {
-  const LeftContent = (props) => (
-    <Avatar.Icon {...props} icon="calendar-check" />
-  );
+import { useNavigation } from '@react-navigation/native';
+
+const Mensagem = () => {
+const [mensagens, setMensagens] = useState("");
+const [profissional, setProfissional] = useState("");
+
+const navigation = useNavigation();
+
   return (
+
     <Container>
-      <Header title={'Caixa de Entrada'} />
+      <Header title={'Mensagens'} goBack={() => navigation.goBack()} />
       <Body>
-        <Card>
-          <Card.Title
-            title="Oportunidade Node-JS"
-            subtitle="Solicitação de entrevista"
-            left={LeftContent}
-          />
-          <Card.Content>
-            <Title>Olá</Title>
-            <Paragraph>
-              "Sou Recrutador da Empresa XX e gostaria de conversar com você
-              sobre uma oportunidade para trabalhar com Node-JS."
-            </Paragraph>
-          </Card.Content>
-          <Card.Actions>
-            <Button>Excluir</Button>
-            <Button>Responder</Button>
-          </Card.Actions>
-        </Card>
+      <Text> Fale com o Profissional </Text>
+        <Input
+        label="Profissional"
+          style={styles.input}
+          onChangeText={setProfissional}
+          value={profissional}
+        />
+        <Input
+        label="Mensagem"
+          style={styles.input}
+          onChangeText={setMensagens}
+          value={mensagens}
+          multiline={true}
+          numberOfLines={8}
+          activeUnderlineColor="#DCDCDC"
+      />
+          <Button
+            style={styles.button}
+            mode="contained">
+            Enviar
+          </Button>
       </Body>
     </Container>
   );
 };
-
 const styles = StyleSheet.create({
-  text: {
-    textAlign: 'center',
-    borderColor: '#37372C',
-    margin: 8,
-  },
+  button: {
+    marginBottom: 8,
+    backgroundColor: '#049c9c',
+  }
 });
 
-export default Mensagens;
+export default Mensagem;

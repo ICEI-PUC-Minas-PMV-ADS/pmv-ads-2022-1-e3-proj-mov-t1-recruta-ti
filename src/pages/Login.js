@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { TextInput, Button, Headline } from 'react-native-paper';
+import { TextInput, Button } from 'react-native-paper';
 
 import Container from '../components/Container';
 import Body from '../components/Body';
@@ -17,10 +17,10 @@ import { login } from '../services/auth.services';
 
 const Login = () => {
   const navigation = useNavigation();
-  const { setSigned, setName } = useUser();
+  const { setSigned, setName,setId } = useUser();
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('rodrigo.lobenwein@sga.pucminas.br');
+  const [password, setPassword] = useState('Aaa@123456789');
 
   const handleLogin = () => {
     if (ValidateEmail(email)) {
@@ -31,6 +31,7 @@ const Login = () => {
         if (res && res.user) {
           setSigned(true);
           setName(res.user.name);
+          setId(res.user.id);
           AsyncStorage.setItem('@TOKEN_KEY', res.accessToken).then();
         } else {
           Alert.alert('Atenção', 'Usuário ou senha inválidos!');
