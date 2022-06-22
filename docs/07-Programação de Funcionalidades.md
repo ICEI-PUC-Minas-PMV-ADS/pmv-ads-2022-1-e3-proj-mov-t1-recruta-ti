@@ -148,14 +148,16 @@ Para a entrega final, criei também as funções de CRUD para linguagens, idioma
 > - Repositório (Expo): https://snack.expo.dev/@pedrovdh/recruta-ti
 
 ### **Screenshots:**
-![image](https://user-images.githubusercontent.com/83302547/167213316-56922446-1ecd-44d1-80ef-136615e5a5d0.png)
+![image](https://user-images.githubusercontent.com/83302547/172074516-80d43b1e-950e-409e-8a5e-03828dc7fbe3.png)
+
+### Observação: Não sei o motivo da tela ter ficado azul quando é utilizada pelo Android no Expo. No web, segue as mesmas cores do restante da aplicação.
 
 ### Descrição:
 
 Criação da tela de Idiomas, que tem como função disponibilizar diversos idiomas e níveis no Idioma para inserção na página de perfil do profissional.
 
 ### **Problemas encontrados:**
-- Corroboro com o que foiditoa cima pelo Rodrigo.
+- Corroboro com o que foi dito acima pelo Rodrigo.
 - Encontrei dificuldades em visualizar a tela em que estou desenvolvendo (caso existam outras) sem que seja chamada por um botão em uma outra página. Acho que deveria ter a possibilidade de escolher qual tela você quer visualizar enquanto desenvolve.
 - Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.
 - Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
@@ -166,6 +168,7 @@ import * as React from 'react';
 import { RadioButton } from 'react-native-paper';
 import { Searchbar } from 'react-native-paper'; 
 import { View } from 'react-native'; 
+import { Button } from 'react-native-paper';
 
 import Body from '../components/Body';
 import Container from '../components/Container';
@@ -192,9 +195,12 @@ const Idiomas = () => {
       <RadioButton.Item label="Alemão" value="fourth" />
       <RadioButton.Item label="Italiano" value="fifth" />
     </RadioButton.Group>
+      <Button mode="contained" onPress={() => console.log('Salvar')}>
+    Salvar
+  </Button>
     </Body>
     </Container>   
-  );
+  );  
 };
 
 export default Idiomas;
@@ -210,13 +216,14 @@ Aprimorar o desenvolvimento da tela, criando a possibilidade de inserção de id
 ---
 
 
-## Tela: Tela de Mensagens
+## Telas: Caixa de Entrada e Mensagens
 > - Responsável: Vera Lúcia Gonçalves Almeida
 > - Situação: Em desenvolvimento
-> - Repositório (Expo): https://snack.expo.dev/@vera.almeida/recruta-ti-mens
+> - Repositório (Expo): https://snack.expo.dev/@vera.almeida/caixa-de-mensagem
 
 ### **Screenshots:**
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Tela%20de%20mensagens.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Caixa%20de%20mensagens.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/Tela%20de%20mensagens_02.png)
 
 ### Descrição:
 
@@ -232,29 +239,61 @@ Criação da tela de Mensagens, que tem como função disponibilizar um canal de
 ### **Trecho de Código:**
 ```Javascript
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, Button } from 'react-native';
-import Mensagem from './src/components/Mensagem'
+import {StyleSheet, View, Alert} from 'react-native';
+import {Appbar, TextInput, Button, Text} from 'react-native-paper';
+
+import Container from './../components/Container';
+import Header from './../components/Header';
+import Body from './../components/Body';
+import Input from './../components/Input';
+import Logo from '../components/Logo';
 
 const App = () => {
-  const [Mensagem, setMensagem]=useState(0);
+const [mensagens, setMensagens] = React.useState("");
+const [profissional, setProfissional] = React.useState("");
 
-  return (
-    <View style={styles.container}>
-    <Text style={styles.text}> Novas Mensagens </Text>
-    </View>
-  );
+const Mensagens = () =>{
+  const _goBack = () => console.log('Went back');
+
+  const _handleSearch = () => console.log('Searching');
+
+  const _handleMore = () => console.log('Shown more');
+
 }
+  return (
 
+    <Container>
+      <Header title={'Mensagens'} />
+      <Body>
+      <Text> Fale com o Profissional </Text>
+        <Input
+        label="Profissional"
+          style={styles.input}
+          onChangeText={setProfissional}
+          value={profissional}
+        />
+        <Input
+        label="Mensagem"
+          style={styles.input}
+          onChangeText={setMensagens}
+          value={mensagens}
+          multiline={true}
+          numberOfLines={8}
+          activeUnderlineColor="#DCDCDC"
+      />
+          <Button
+            style={styles.button}
+            mode="contained">
+            Enviar
+          </Button>
+      </Body>
+    </Container>
+  );
+};
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#d0ecec'
-  },
-  text:{
-    fontSize: 15,
-    textAlign: 'center',
-    paddingTop: 80,
-
+  button: {
+    marginBottom: 8,
+    backgroundColor: '#049c9c',
   }
 });
 
@@ -263,10 +302,10 @@ export default App;
 
 
 ### **Próximos Passos:**
-Conseguir criar a tela completamente, pois foi feita apenas a base de uma delas.
+Aprimorar as funcionalidades.
 
 
-### **Video: [Link]https://screenrec.com/share/j4DvF23d5K**
+### **Video: [https://screenrec.com/share/ZNnm9ah83V**
 
 ## Tela: Login e Registro do recrutador
 > - Responsável: Pedro Henrique Pinto de Lacerda
@@ -406,3 +445,135 @@ export default api;
 Melhorar o código de maneira funcional e a apresentação na tela do aplicativo.
 
 ### **Video: [Link]https://youtu.be/8u_faHvA9Vs**
+
+
+## Tela: Login e Registro do recrutador + caixa de entrada do recrutador + pesquisa de profissionais
+> - Responsável: Pedro Henrique Pinto de Lacerda
+> - Situação: Em desenvolvimento
+> - Repositório (GitHub): https://github.com/pedrohplacerda/recruta-ti
+
+### Descrição:
+
+Criação da tela de login e registro do recrutador dentro da platoforma, além da caixa de entrada do recrutador e pesquisa de profissionais.
+
+### **Problemas encontrados:**
+- Dificuldade em desenvolver em conjunto. Não temos a possibilidade de ter um repositório único no expo que várias pessoas possam alterar e manter as alterações nesse repositório expo. Temos a possibilidade de fazer isso no git, mas pode causar grandes dificuldades no momento da mescla.Os demais problemas são comuns para quem está aprendendo uma nova linguagem e sofre com problemas de sintaxe.
+- Devido a meu emprego me consumir bastante tempo, eu não tenho conseguido me reunir com meus colegas como gostaria.
+
+### **Trecho de Código:**
+- Trecho do código da tela de login do recrutador
+```Javascript
+import React from 'react';
+import { StyleSheet, Image } from 'react-native';
+import { Appbar, TextInput, Button, Text } from 'react-native-paper';
+import Container from '../components/Container';
+import Header from '../components/Header';
+import Body from '../components/Body';
+import Input from '../components/Input';
+
+const LoginRecrutador = () => {
+
+  const [email, setEmail] = React.useState("");
+  const [senha, setSenha] = React.useState("");
+
+  return (
+    <Container>
+      <Header title={"Recruta-TI"} />
+      <Image style={styles.logo}
+      />
+      <Text style={styles.text}>
+        Recrutador, Seja Bem Vindo (a)!
+      </Text>
+      <Body>
+        <Input
+          label="Email"
+          value={email}
+          onChangeText={email => setEmail(email)}
+        />
+        <Input
+          label="Senha"
+          value={senha}
+          onChangeText={senha => setSenha(senha)}
+        />
+        <Text style={styles.text}>
+          Esqueci minha senha
+        </Text>
+        <Button mode="contained" onPress={() => console.log('Pressed')}>
+          Login
+        </Button>
+        <Text style={styles.text}>
+          Ainda não possui cadastro? Clique aqui.
+        </Text>
+      </Body>
+    </Container>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    fontWeight: 'normal'
+  },
+  logo: {
+    width: 66,
+    height: 58,
+    alignContent: 'center'
+  }
+});
+
+export default LoginRecrutador;
+```
+
+### **Trecho de Código:**
+- Trecho do código da tela de home onde fica os botões de navegação.
+```Javascript
+import * as React from 'react';
+import { BottomNavigation, Text } from 'react-native-paper';
+import CaixaDeEntrada from './CaixaDeEntrada';
+import LoginRecrutador from './LoginRecrutador'
+import PerfilRecrutador from './PerfilRecrutador';
+import PesquisarProfissionais from './PesquisarProfissionais';
+
+const Home = () => {
+  const [index, setIndex] = React.useState(0);
+  const [routes] = React.useState([
+    { key: 'login', title: 'Fazer login', icon: 'login' },
+    { key: 'conta', title: 'Conta', icon: 'account' },
+    { key: 'pesquisar', title: 'Pesquisar', icon: 'search-web' },
+    { key: 'caixaDeEntrada', title: 'Caixa de entrada', icon: 'email-outline' }
+  ]);
+
+  const renderScene = BottomNavigation.SceneMap({
+    login: LoginRecrutador,
+    conta: PerfilRecrutador,
+    pesquisar: PesquisarProfissionais,
+    caixaDeEntrada: CaixaDeEntrada
+  });
+
+  return (
+    <BottomNavigation
+      navigationState={{ index, routes }}
+      onIndexChange={setIndex}
+      renderScene={renderScene}
+    />
+  );
+};
+
+export default Home;
+```
+
+
+### **Screenshots:**
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/LoginRecrutador.jpg)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t1-recruta-ti/blob/main/docs/img/PesquisarProfissionais.jpg)
+
+
+
+
+### **Próximos Passos:**
+
+Melhorar as funções de navegação. Implementar melhor o design de cada tela e também as telas de perfil do recrutador e caixa de entrada. 
+
+### **Video: [Link]https://youtu.be/vS7NwiZfDzI**
+

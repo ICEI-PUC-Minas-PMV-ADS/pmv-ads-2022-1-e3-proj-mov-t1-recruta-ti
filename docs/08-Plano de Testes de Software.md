@@ -62,4 +62,11 @@
 |Requisito | RNF-002 |
 |Procedimento | Verificar se senha armazenada no banco de dados está criptografada  |
 |Resultado Esperado | As senhas armazenadas estão criptografadas |
+   
+|Caso de teste | TC-009  |
+|------|------------|
+|Item de Teste | Escrever Mensagem |
+|Requisito | RF-007 |
+|Procedimento | Clicar no ícone de Lápis na Bottom Navigation, escolher profissional a ser contactado na label profissional, escrever mensagem na label mensagem, clicar em Enviar. |
+|Resultado Esperado | Visualizar a notificação: "Mensagem enviada com sucesso". |
 
